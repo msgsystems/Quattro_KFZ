@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:internaltable xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1.5.3.0" guid="20E3QIATQGIHJ8QU2HJBJID94C" abstract="false" customizing="none" final="false" pmid="R400AK5MSG" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>Constants::Tables</pm:namespace>
+  <pm:name>PaymentFrequencySupplements_starting2016</pm:name>
+  <pm:tablecolumns>
+    <pm:tablecolumn datatype="integer" guid="B47H6HA6POGBCBO8MKF3L98I48" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>paymentFrequency</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="de-DE">Zahlungsrhythmus</pm:stringval>
+        <pm:stringval encoding="none" culture="en-US">Payment Frequency</pm:stringval>
+      </pm:label>
+      <pm:defaultvaluerule>
+        <pm:value>
+          <pm:scalarvalue>
+            <pm:integerval>1</pm:integerval>
+          </pm:scalarvalue>
+        </pm:value>
+      </pm:defaultvaluerule>
+      <pm:valuecheckrule>
+        <pm:and>
+          <pm:rule>
+            <pm:validvaluesfromenum>
+              <pm:enumeration guid="20DHS0I4U8J1KAB46G5URN0GU3">Constants::Enumerations::PaymentFrequency</pm:enumeration>
+            </pm:validvaluesfromenum>
+          </pm:rule>
+          <pm:rule>
+            <pm:allexceptnull/>
+          </pm:rule>
+        </pm:and>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="float" guid="1TH81HSSNUGC28ABJA5GKUBMFQ" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>supplement</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="en-US">Supplement</pm:stringval>
+        <pm:stringval encoding="none" culture="de-DE">Zuschlag</pm:stringval>
+      </pm:label>
+      <pm:defaultvaluerule>
+        <pm:value>
+          <pm:scalarvalue>
+            <pm:floatval>0.0</pm:floatval>
+          </pm:scalarvalue>
+        </pm:value>
+      </pm:defaultvaluerule>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+  </pm:tablecolumns>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Zahlungsrhythmus-Zuschläge - ab 2016</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Payment Frequency Supplements - starting 2016</pm:stringval>
+  </pm:label>
+  <pm:data>
+    <pm:columnvalues>
+      <pm:integervals>
+        <pm:integerval>1</pm:integerval>
+        <pm:integerval>2</pm:integerval>
+        <pm:integerval>4</pm:integerval>
+        <pm:integerval>12</pm:integerval>
+      </pm:integervals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:floatvals>
+        <pm:floatval>0.0</pm:floatval>
+        <pm:floatval>1.5</pm:floatval>
+        <pm:floatval>2.0</pm:floatval>
+        <pm:floatval>2.5</pm:floatval>
+      </pm:floatvals>
+    </pm:columnvalues>
+  </pm:data>
+</pm:internaltable>

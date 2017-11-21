@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="float" dataversion="1.5.3.0" final="false" guid="B831JBMOHCHK68LOR22BCLC6VG" isnullable="false" nrdims="0" pmid="N300TL5TST" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>Mathematics::Formulas</pm:namespace>
+  <pm:name>tariffElementaryProduct</pm:name>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Tarifiere Elementarprodukt</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Tariff Elementary Product</pm:stringval>
+  </pm:label>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="false" forceassignmenttargetresizing="none"/>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[// the risk premium is calculated first
+// in the following the elementary product specific supplements are considered
+
+#include "Paths"
+path Supplements
+data float value
+data float calculateRiskPremium
+data float netPremium
+data float minimalPremium
+float premium = 0
+extern object InsObj
+
+print( "tariff elementary product ", GETOBJECTNAME( this ) )
+
+premium = this.calculateRiskPremium[ InsObj = InsObj ]
+
+loop( Supplements, SUPPLEMENT_PATH )
+{
+ print( "processing supplement ", GETOBJECTNAME( Supplements ), " with ", Supplements.value, "%" )
+ premium *= ( 100 + Supplements.value ) / 100
+}
+
+if( this.minimalPremium > premium )
+{
+ print( "premium ", premium, " below minimal premium of ", this.minimalPremium )
+ premium = this.minimalPremium
+}
+
+this.netPremium = rnd( premium, 2 )
+Res = this.netPremium
+
+print( "net premium for elementary product ", GETOBJECTNAME( this ), " = ",  Res )
+]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

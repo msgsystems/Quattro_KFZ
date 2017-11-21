@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:internaltable xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1.5.3.0" guid="7FLSB7KO4CJQG8QSOANR72R95I" abstract="false" customizing="none" final="false" pmid="H300TL5TST" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>Constants::Tables</pm:namespace>
+  <pm:name>PartiallyComprehensiveTariff</pm:name>
+  <pm:type guid="CADK1LOOIMI338N1L1NV44USUF">TechnicalSchema::StructureTypes::TariffTableType</pm:type>
+  <pm:tablecolumns>
+    <pm:tablecolumn datatype="integer" guid="4NIMLTMTI4GJHAAM9GJMLFTKJ6" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>riskClass</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="en-US">Risk Classification</pm:stringval>
+        <pm:stringval encoding="none" culture="de-DE">Wagniskennziffer</pm:stringval>
+      </pm:label>
+      <pm:defaultvaluerule>
+        <pm:value>
+          <pm:scalarvalue>
+            <pm:integerval>0</pm:integerval>
+          </pm:scalarvalue>
+        </pm:value>
+      </pm:defaultvaluerule>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="float" guid="DGFRQ5QQSAJ92A8PCLU9EK4OJ7" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>power</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="de-DE">Leistung in kW</pm:stringval>
+        <pm:stringval encoding="none" culture="en-US">Power in kW</pm:stringval>
+      </pm:label>
+      <pm:defaultvaluerule>
+        <pm:value>
+          <pm:scalarvalue>
+            <pm:floatval>0.0</pm:floatval>
+          </pm:scalarvalue>
+        </pm:value>
+      </pm:defaultvaluerule>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+    <pm:tablecolumn datatype="float" guid="7KS0F50BH6GGAAQVEUUAFGEUCU" isnullable="true" nrdims="0" role="none" sortkey="0">
+      <pm:name>premium</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="de-DE">Prämie</pm:stringval>
+        <pm:stringval encoding="none" culture="en-US">Premium</pm:stringval>
+      </pm:label>
+      <pm:defaultvaluerule>
+        <pm:value>
+          <pm:scalarvalue>
+            <pm:floatval>0.0</pm:floatval>
+          </pm:scalarvalue>
+        </pm:value>
+      </pm:defaultvaluerule>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:tablecolumn>
+  </pm:tablecolumns>
+  <pm:primarykey guid="1TEHBE245GJBHAMTHARFAOI08K" sortkey="0">
+    <pm:name>PK_TarifKfzTK</pm:name>
+    <pm:columns>
+      <pm:column>riskClass</pm:column>
+      <pm:column>power</pm:column>
+    </pm:columns>
+  </pm:primarykey>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Teilkasko-Tarif</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Partially Comprehensive Tariff</pm:stringval>
+  </pm:label>
+  <pm:data>
+    <pm:columnvalues>
+      <pm:integervals>
+        <pm:integerval>112</pm:integerval>
+        <pm:integerval>112</pm:integerval>
+        <pm:integerval>112</pm:integerval>
+        <pm:integerval>112</pm:integerval>
+        <pm:integerval>112</pm:integerval>
+        <pm:integerval>112</pm:integerval>
+        <pm:integerval>112</pm:integerval>
+        <pm:integerval>112</pm:integerval>
+        <pm:integerval>112</pm:integerval>
+        <pm:integerval>112</pm:integerval>
+        <pm:integerval>112</pm:integerval>
+        <pm:integerval>112</pm:integerval>
+        <pm:integerval>112</pm:integerval>
+        <pm:integerval>112</pm:integerval>
+        <pm:integerval>112</pm:integerval>
+        <pm:integerval>112</pm:integerval>
+        <pm:integerval>112</pm:integerval>
+        <pm:integerval>112</pm:integerval>
+      </pm:integervals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:floatvals>
+        <pm:floatval>0.0</pm:floatval>
+        <pm:floatval>22.0</pm:floatval>
+        <pm:floatval>33.0</pm:floatval>
+        <pm:floatval>44.0</pm:floatval>
+        <pm:floatval>55.0</pm:floatval>
+        <pm:floatval>66.0</pm:floatval>
+        <pm:floatval>77.0</pm:floatval>
+        <pm:floatval>88.0</pm:floatval>
+        <pm:floatval>99.0</pm:floatval>
+        <pm:floatval>110.0</pm:floatval>
+        <pm:floatval>132.0</pm:floatval>
+        <pm:floatval>154.0</pm:floatval>
+        <pm:floatval>176.0</pm:floatval>
+        <pm:floatval>198.0</pm:floatval>
+        <pm:floatval>220.0</pm:floatval>
+        <pm:floatval>275.0</pm:floatval>
+        <pm:floatval>330.0</pm:floatval>
+        <pm:floatval>385.0</pm:floatval>
+      </pm:floatvals>
+    </pm:columnvalues>
+    <pm:columnvalues>
+      <pm:floatvals>
+        <pm:floatval>110.0</pm:floatval>
+        <pm:floatval>119.9</pm:floatval>
+        <pm:floatval>129.25</pm:floatval>
+        <pm:floatval>140.8</pm:floatval>
+        <pm:floatval>148.5</pm:floatval>
+        <pm:floatval>159.5</pm:floatval>
+        <pm:floatval>169.4</pm:floatval>
+        <pm:floatval>193.6</pm:floatval>
+        <pm:floatval>218.35</pm:floatval>
+        <pm:floatval>247.5</pm:floatval>
+        <pm:floatval>273.9</pm:floatval>
+        <pm:floatval>308.0</pm:floatval>
+        <pm:floatval>343.2</pm:floatval>
+        <pm:floatval>356.4</pm:floatval>
+        <pm:floatval>409.2</pm:floatval>
+        <pm:floatval>513.7</pm:floatval>
+        <pm:floatval>757.9</pm:floatval>
+        <pm:floatval>963.6</pm:floatval>
+      </pm:floatvals>
+    </pm:columnvalues>
+  </pm:data>
+</pm:internaltable>

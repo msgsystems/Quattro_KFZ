@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:language xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" code="ITA" culture="it-IT" dataversion="1.5.3.0" final="false" guid="CQN08UKVCGHV68H79C3U4L50SI" pmid="M200TL5TST" sealed="false" sortkey="0" visibility="external">
+  <pm:namespace>TechnicalSchema::Languages</pm:namespace>
+  <pm:name>Italiano</pm:name>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Italienisch</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Italian</pm:stringval>
+  </pm:label>
+</pm:language>

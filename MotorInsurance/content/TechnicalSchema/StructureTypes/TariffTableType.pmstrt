@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:structuretype xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" dataversion="1.5.3.0" final="false" guid="CADK1LOOIMI338N1L1NV44USUF" pmid="5L10AA5TST" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>TechnicalSchema::StructureTypes</pm:namespace>
+  <pm:name>TariffTableType</pm:name>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Tariftabellen-Typ</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Tariff Table Type</pm:stringval>
+  </pm:label>
+  <pm:fields>
+    <pm:field abstract="false" datatype="integer" final="false" guid="4MK4APKEHQJDB9U5GOJBV17IM0" isnullable="true" key="true" nrdims="0" sealed="false" sortkey="0" visibility="content">
+      <pm:name>riskClass</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="de-DE">Wagniskennziffer</pm:stringval>
+        <pm:stringval encoding="none" culture="en-US">Risk Classification</pm:stringval>
+      </pm:label>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:field>
+    <pm:field abstract="false" datatype="float" final="false" guid="1L1OU5838MJ9SAI7C7JGHMFI49" isnullable="true" key="true" nrdims="0" sealed="false" sortkey="0" visibility="content">
+      <pm:name>power</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="de-DE">Leistung in kW</pm:stringval>
+        <pm:stringval encoding="none" culture="en-US">Power in kW</pm:stringval>
+      </pm:label>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:field>
+    <pm:field abstract="false" datatype="float" final="false" guid="6OPA3UT030G0LASJO89A2D6P66" isnullable="true" key="false" nrdims="0" sealed="false" sortkey="0" visibility="content">
+      <pm:name>premium</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="de-DE">Prämie</pm:stringval>
+        <pm:stringval encoding="none" culture="en-US">Premiuim</pm:stringval>
+      </pm:label>
+      <pm:valuecheckrule>
+        <pm:allexceptnull/>
+      </pm:valuecheckrule>
+    </pm:field>
+  </pm:fields>
+</pm:structuretype>

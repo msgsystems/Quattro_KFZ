@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:package xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1.5.3.0" guid="0H5EG3O1JIHUCA0TBUE7MD6IT0" sortkey="100" structural="true">
+  <pm:namespace></pm:namespace>
+  <pm:name>TechnicalSchema</pm:name>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Technisches Schema</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Technical schema</pm:stringval>
+  </pm:label>
+  <pm:tags>
+    <pm:tag>
+      <pm:type builtin="true">IsStatic</pm:type>
+      <pm:value>
+        <pm:scalarvalue>
+          <pm:booleanval>true</pm:booleanval>
+        </pm:scalarvalue>
+      </pm:value>
+    </pm:tag>
+  </pm:tags>
+  <pm:objecttypes inherited="false">
+    <pm:objecttype>language</pm:objecttype>
+    <pm:objecttype>productmoduletype</pm:objecttype>
+    <pm:objecttype>structuretype</pm:objecttype>
+    <pm:objecttype>tagtype</pm:objecttype>
+  </pm:objecttypes>
+  <pm:objectfilters inherited="false">
+    <pm:objectfilter abstract="none" objecttype="language"/>
+    <pm:objectfilter abstract="none" objecttype="productmoduletype"/>
+    <pm:objectfilter abstract="none" objecttype="structuretype"/>
+    <pm:objectfilter abstract="none" objecttype="tagtype"/>
+  </pm:objectfilters>
+</pm:package>

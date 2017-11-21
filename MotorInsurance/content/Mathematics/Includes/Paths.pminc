@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:include xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" dataversion="1.5.3.0" final="false" guid="53IGTTBHE4HGRADUQ1JN6B9GRF" pmid="V300TL5TST" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>Mathematics::Includes</pm:namespace>
+  <pm:name>Paths</pm:name>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Pfade</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Paths</pm:stringval>
+  </pm:label>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[#define SUPPLEMENT_PATH "/TO:/PK:/OT:SupplementType"
+#define OBJECT_PATH "/TO:/PK:/OT:ObjectType"
+#define PRODUCT_PATH "/TO:/PK:/OT:ProductType"
+#define ELP_PATH "/TO:/PK:/OT:ElementaryProductType"]]></pm:text>
+  </pm:sourcecode>
+</pm:include>

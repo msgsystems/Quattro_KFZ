@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:enumeration xmlns:pm="http://www.msg.de/msgpm/data/2011" datatype="integer" dataversion="1.5.3.0" guid="FO7O5JVP8CGKN9LHOH3JQ07UNA" isnullable="false" nrdims="0" abstract="false" customizing="none" final="false" pmid="B800AK5MSG" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>Constants::Enumerations</pm:namespace>
+  <pm:name>OvernightCarStorage</pm:name>
+  <pm:entries>
+    <pm:entry guid="3132KPVQ7IG0495BLSLPTCA5TJ" sortkey="0">
+      <pm:name>unknown</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="de-DE">unbekannt</pm:stringval>
+        <pm:stringval encoding="none" culture="en-US">unknown</pm:stringval>
+      </pm:label>
+      <pm:value>
+        <pm:integerval>0</pm:integerval>
+      </pm:value>
+    </pm:entry>
+    <pm:entry guid="1959CEO9DAGVG96CFUVT2DTNVN" sortkey="0">
+      <pm:name>carport</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="de-DE">Carport</pm:stringval>
+        <pm:stringval encoding="none" culture="en-US">Carport</pm:stringval>
+      </pm:label>
+      <pm:value>
+        <pm:integerval>1</pm:integerval>
+      </pm:value>
+    </pm:entry>
+    <pm:entry guid="D67L0V8LIQGNOBN22CHFUPE316" sortkey="0">
+      <pm:name>garage</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="de-DE">Garage</pm:stringval>
+        <pm:stringval encoding="none" culture="en-US">Garage</pm:stringval>
+      </pm:label>
+      <pm:value>
+        <pm:integerval>2</pm:integerval>
+      </pm:value>
+    </pm:entry>
+  </pm:entries>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Abstellort</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Overnight Car Storage</pm:stringval>
+  </pm:label>
+</pm:enumeration>

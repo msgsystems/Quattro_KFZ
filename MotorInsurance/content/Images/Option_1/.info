@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:package xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1.5.3.0" guid="3BM4BMSP6KGL8AS33L5T45K2FM" sortkey="0" structural="false">
+  <pm:namespace>Images</pm:namespace>
+  <pm:name>Option_1</pm:name>
+  <pm:objecttypes inherited="true"/>
+  <pm:objectfilters inherited="true"/>
+</pm:package>

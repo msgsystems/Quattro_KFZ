@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:language xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" code="FRA" culture="fr-FR" dataversion="1.5.3.0" final="false" guid="3N1HBSHH0UG2P83DD1EE57T380" pmid="N200TL5TST" sealed="false" sortkey="0" visibility="external">
+  <pm:namespace>TechnicalSchema::Languages</pm:namespace>
+  <pm:name>Francais</pm:name>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Französisch</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">French</pm:stringval>
+  </pm:label>
+</pm:language>

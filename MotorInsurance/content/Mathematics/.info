@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:package xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1.5.3.0" guid="9BQH23R2DKJ1UAT9U30934F051" sortkey="400" structural="true">
+  <pm:namespace></pm:namespace>
+  <pm:name>Mathematics</pm:name>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Mathematik</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Mathematics</pm:stringval>
+  </pm:label>
+  <pm:tags>
+    <pm:tag>
+      <pm:type builtin="true">IsStatic</pm:type>
+      <pm:value>
+        <pm:scalarvalue>
+          <pm:booleanval>true</pm:booleanval>
+        </pm:scalarvalue>
+      </pm:value>
+    </pm:tag>
+  </pm:tags>
+  <pm:objecttypes inherited="false">
+    <pm:objecttype>formula</pm:objecttype>
+    <pm:objecttype>function</pm:objecttype>
+    <pm:objecttype>include</pm:objecttype>
+    <pm:objecttype>structure</pm:objecttype>
+    <pm:objecttype>userexit</pm:objecttype>
+    <pm:objecttype>variable</pm:objecttype>
+  </pm:objecttypes>
+  <pm:objectfilters inherited="false">
+    <pm:objectfilter abstract="none" objecttype="formula"/>
+    <pm:objectfilter abstract="none" objecttype="function"/>
+    <pm:objectfilter abstract="none" objecttype="include"/>
+    <pm:objectfilter abstract="none" objecttype="structure"/>
+    <pm:objectfilter abstract="none" objecttype="userexit"/>
+    <pm:objectfilter abstract="none" objecttype="variable"/>
+  </pm:objectfilters>
+</pm:package>

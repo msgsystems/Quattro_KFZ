@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:productmoduletype xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" dataversion="1.5.3.0" final="false" guid="9UIVTGKE7UHV9869CKIOUQU7S8" hasvariants="none" pmid="W200TL5TST" root="none" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>TechnicalSchema::ProductModuleTypes</pm:namespace>
+  <pm:name>MotorElementaryProductType</pm:name>
+  <pm:extends>
+    <pm:base guid="8TVPS33THEH4IBMR500CBU3I50">TechnicalSchema::ProductModuleTypes::ElementaryProductType</pm:base>
+  </pm:extends>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Kfz-Elementarprodukttyp</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Motor Elementary Product Type</pm:stringval>
+  </pm:label>
+  <pm:pm3infotags istemplate="false"/>
+  <pm:productattributes>
+    <pm:attribute abstract="false" datatype="string" final="false" guid="E488A9DQTCIN9B6QS5CJEOEE1R" isnullable="true" nrdims="0" optional="false" pmid="8300TL5TST" sealed="false" sortkey="0" visibility="content">
+      <pm:name>tariffTable</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="de-DE">Tariftabelle</pm:stringval>
+        <pm:stringval encoding="none" culture="en-US">Tariff Table</pm:stringval>
+      </pm:label>
+      <pm:tags>
+        <pm:tag>
+          <pm:type guid="0UUAM1NDJUHLLBFVMMHP2AE11I" builtin="false">TechnicalSchema::TagTypes::TariffCriteria</pm:type>
+        </pm:tag>
+      </pm:tags>
+    </pm:attribute>
+  </pm:productattributes>
+  <pm:contractattributes>
+    <pm:attribute abstract="false" datatype="integer" final="false" guid="ABM7HJO0IMJRAB9K9QT83L6CPC" isnullable="true" nrdims="0" optional="false" sealed="false" sortkey="0" visibility="content">
+      <pm:name>regionalClass</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="de-DE">Regionalklasse</pm:stringval>
+        <pm:stringval encoding="none" culture="en-US">Regional Classification</pm:stringval>
+      </pm:label>
+      <pm:tags>
+        <pm:tag>
+          <pm:type guid="0UUAM1NDJUHLLBFVMMHP2AE11I" builtin="false">TechnicalSchema::TagTypes::TariffCriteria</pm:type>
+        </pm:tag>
+      </pm:tags>
+    </pm:attribute>
+    <pm:attribute abstract="false" datatype="integer" final="false" guid="8CE7TM3D2EH1L8Q0NHI8JT3K1N" isnullable="true" nrdims="0" optional="false" sealed="false" sortkey="0" visibility="content">
+      <pm:name>typeClass</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="en-US">Type Class</pm:stringval>
+        <pm:stringval encoding="none" culture="de-DE">Typklasse</pm:stringval>
+      </pm:label>
+      <pm:tags>
+        <pm:tag>
+          <pm:type guid="0UUAM1NDJUHLLBFVMMHP2AE11I" builtin="false">TechnicalSchema::TagTypes::TariffCriteria</pm:type>
+        </pm:tag>
+      </pm:tags>
+    </pm:attribute>
+  </pm:contractattributes>
+</pm:productmoduletype>

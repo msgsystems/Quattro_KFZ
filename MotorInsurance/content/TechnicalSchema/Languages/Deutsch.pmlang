@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:language xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" code="DEU" culture="de-DE" dataversion="1.5.3.0" final="false" guid="16313E6E60H2D99M3TR74902L6" pmid="O200TL5TST" sealed="false" sortkey="0" visibility="external">
+  <pm:namespace>TechnicalSchema::Languages</pm:namespace>
+  <pm:name>Deutsch</pm:name>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Deutsch</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">German</pm:stringval>
+  </pm:label>
+</pm:language>

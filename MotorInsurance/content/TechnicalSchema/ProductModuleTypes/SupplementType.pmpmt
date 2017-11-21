@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:productmoduletype xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" dataversion="1.5.3.0" final="false" guid="ELOL56LOI0G4R9RTO9SJBTR4PQ" hasvariants="either" pmid="S200TL5TST" root="false" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>TechnicalSchema::ProductModuleTypes</pm:namespace>
+  <pm:name>SupplementType</pm:name>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Zuschlag-/Nachlasstyp</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Supplement/Rebate Type</pm:stringval>
+  </pm:label>
+  <pm:pm3infotags istemplate="false"/>
+  <pm:image>\MotorInsurance\content\Images\Option_1\LateralObject.png</pm:image>
+  <pm:productattributes>
+    <pm:attribute abstract="false" datatype="float" final="false" guid="7INBTFGNB6JO8BQSK77SUHI3QL" isnullable="true" nrdims="0" optional="false" pmid="D300TL5TST" sealed="false" sortkey="0" visibility="content">
+      <pm:name>value</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="en-US">Value</pm:stringval>
+        <pm:stringval encoding="none" culture="de-DE">Wert</pm:stringval>
+      </pm:label>
+    </pm:attribute>
+  </pm:productattributes>
+</pm:productmoduletype>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="float" dataversion="1.5.3.0" final="false" guid="827IPLOBPEGGO8NS3CRNVTNG09" isnullable="false" nrdims="0" pmid="P300TL5TST" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>Mathematics::Formulas</pm:namespace>
+  <pm:name>tariffSalesProduct</pm:name>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Tarifiere Verkaufsprodukt</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Tariff Sales Product</pm:stringval>
+  </pm:label>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="false" forceassignmenttargetresizing="none"/>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[// the calculation is forwarded to the product layer and summed up
+
+#include "Paths"
+path Products
+path Supplements
+data float tariff
+data float netPremium
+data float grossPremium
+data float insuranceTax
+data float value
+
+print( "calculate sales product ", GETOBJECTNAME( this ) )
+
+// sum up premiums of all products
+this.netPremium = 0
+
+loop( Products, PRODUCT_PATH )
+{
+  this.netPremium += Products.tariff
+}
+
+// consider all dynamic supplements
+loop( Supplements, SUPPLEMENT_PATH )
+{
+  print( "calculate supplement ", GETOBJECTNAME( Supplements ), " with ", Supplements.value, "%" )
+  this.netPremium *= ( 100 + Supplements.value ) / 100
+}
+
+// calcutate of gross premium
+this.netPremium = rnd( this.netPremium , 2 )
+print( "net premium for sales product ", GETOBJECTNAME( this ), " = ",  this.netPremium )
+
+print( "add insurance tax of ", this.insuranceTax, "%" )
+this.grossPremium = rnd( this.netPremium * ( 100 + this.insuranceTax ) / 100 , 2 )
+print( "gross premium for sales product ", GETOBJECTNAME( this ), " = ",  this.grossPremium )
+
+Res = this.grossPremium
+]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

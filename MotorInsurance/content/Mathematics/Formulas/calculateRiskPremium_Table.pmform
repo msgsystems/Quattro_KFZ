@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="float" dataversion="1.5.3.0" final="false" guid="BFAAA8BEKSG3JALIE2OO9T1H69" isnullable="false" nrdims="0" pmid="M300TL5TST" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>Mathematics::Formulas</pm:namespace>
+  <pm:name>calculateRiskPremium_Table</pm:name>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Berechne Risikoprämie - Tabelle</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Calculate Risk Premium - Table</pm:stringval>
+  </pm:label>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="false" forceassignmenttargetresizing="none"/>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[extern object InsObj
+data string tariffTable
+data string elpKind
+data int riskClass
+data float power
+
+string tableName = this.tariffTable
+
+print( "calculate risk premium (by table): ", tableName, " for risk class: ", InsObj.riskClass , " and power: ", InsObj.power )
+
+Res = TableByName( tableName , TariffTableStructure ).premium.min[( riskClass = InsObj.riskClass ), ( power > InsObj.power )]
+
+print( "risk premium = ", Res )
+]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

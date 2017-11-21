@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:package xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1.5.3.0" guid="EV736G5OAOGGCA38D5S3QUA72S" sortkey="460" structural="false">
+  <pm:namespace>Mathematics</pm:namespace>
+  <pm:name>UserExits</pm:name>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Nutzerfunktionen</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">User exits</pm:stringval>
+  </pm:label>
+  <pm:objecttypes inherited="false">
+    <pm:objecttype>userexit</pm:objecttype>
+  </pm:objecttypes>
+</pm:package>

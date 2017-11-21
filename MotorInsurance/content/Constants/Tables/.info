@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:package xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1.5.3.0" guid="F8F688LDVCG7P83J698BBNP4U3" sortkey="330" structural="false">
+  <pm:namespace>Constants</pm:namespace>
+  <pm:name>Tables</pm:name>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Tabellen</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Tables</pm:stringval>
+  </pm:label>
+  <pm:tags>
+    <pm:tag>
+      <pm:type builtin="true">IsStatic</pm:type>
+      <pm:value>
+        <pm:scalarvalue>
+          <pm:booleanval>true</pm:booleanval>
+        </pm:scalarvalue>
+      </pm:value>
+    </pm:tag>
+  </pm:tags>
+  <pm:objecttypes inherited="false">
+    <pm:objecttype>internaltable</pm:objecttype>
+    <pm:objecttype>externaltable</pm:objecttype>
+  </pm:objecttypes>
+  <pm:folders>
+    <pm:folder guid="02QNH2CRV8JAUA6C7B1O4F185U" sortkey="0" structural="false">
+      <pm:name>TariffTables</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="de-DE">Tariftabellen</pm:stringval>
+        <pm:stringval encoding="none" culture="en-US">Tariff Tables</pm:stringval>
+      </pm:label>
+      <pm:tags>
+        <pm:tag>
+          <pm:type builtin="true">IsStatic</pm:type>
+          <pm:value>
+            <pm:scalarvalue>
+              <pm:booleanval>false</pm:booleanval>
+            </pm:scalarvalue>
+          </pm:value>
+        </pm:tag>
+      </pm:tags>
+      <pm:objecttypes inherited="true"/>
+      <pm:objectfilters inherited="false">
+        <pm:objectfilter abstract="none" objecttype="internaltable">
+          <pm:type guid="02QNH2CRV8JAUA6C7B1O4F185U">TechnicalSchema::StructureTypes::TariffTableType</pm:type>
+        </pm:objectfilter>
+        <pm:objectfilter abstract="none" objecttype="externaltable">
+          <pm:type guid="02QNH2CRV8JAUA6C7B1O4F185U">TechnicalSchema::StructureTypes::TariffTableType</pm:type>
+        </pm:objectfilter>
+      </pm:objectfilters>
+      <pm:folders/>
+      <pm:objects>
+        <pm:object>FullyComprehensiveTariff</pm:object>
+        <pm:object>LiabilityTariff</pm:object>
+        <pm:object>PartiallyComprehensiveTariff</pm:object>
+      </pm:objects>
+    </pm:folder>
+  </pm:folders>
+</pm:package>

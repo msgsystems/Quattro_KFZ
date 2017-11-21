@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:productmoduletype xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" dataversion="1.5.3.0" final="false" guid="43UMHUA4M0JTBBD57V0F5067VK" hasvariants="either" pmid="Q200TL5TST" root="false" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>TechnicalSchema::ProductModuleTypes</pm:namespace>
+  <pm:name>CoverageType</pm:name>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Deckungstyp</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Coverage Type</pm:stringval>
+  </pm:label>
+  <pm:pm3infotags istemplate="false"/>
+  <pm:image>\MotorInsurance\content\Images\Option_1\Coverage.png</pm:image>
+  <pm:productattributes>
+    <pm:attribute abstract="false" datatype="float" final="false" guid="33FERVT250JVKAPT4IPEQ7SEGH" isnullable="true" nrdims="0" optional="false" pmid="5300TL5TST" sealed="false" sortkey="0" visibility="content">
+      <pm:name>coverageAmount</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="en-US">Coverage Amount</pm:stringval>
+        <pm:stringval encoding="none" culture="de-DE">Deckungssumme</pm:stringval>
+      </pm:label>
+      <pm:tags>
+        <pm:tag>
+          <pm:type guid="0UUAM1NDJUHLLBFVMMHP2AE11I" builtin="false">TechnicalSchema::TagTypes::TariffCriteria</pm:type>
+        </pm:tag>
+      </pm:tags>
+    </pm:attribute>
+  </pm:productattributes>
+</pm:productmoduletype>

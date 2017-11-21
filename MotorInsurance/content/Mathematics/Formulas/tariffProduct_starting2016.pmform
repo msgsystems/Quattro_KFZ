@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:formula xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="float" dataversion="1.5.3.0" final="false" guid="9K9BLJD34GHVVATSB1BMB2BFQ4" isnullable="false" nrdims="0" pmid="S400AK5MSG" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>Mathematics::Formulas</pm:namespace>
+  <pm:name>tariffProduct_starting2016</pm:name>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Tarifiere Produkt - ab 2016</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Tariff Product - starting 2016</pm:stringval>
+  </pm:label>
+  <pm:resultname>Res</pm:resultname>
+  <pm:compileroptions>
+    <pm:languageoptions>
+      <pm:m10options autobreaksincases="false" forceassignmenttargetresizing="none"/>
+    </pm:languageoptions>
+  </pm:compileroptions>
+  <pm:sourcecode language="m10">
+    <pm:text encoding="none"><![CDATA[// first the insured object is determined
+// the tarification is delegated to elementary product layer and summed up
+// in the following the product specific supplements are considered
+
+#include "Paths"
+path InsObjects
+object InsObj
+extern path ELP
+path Supplements
+data float netPremium
+data float tariff
+data int paymentFrequency
+data float value
+float premium = 0
+
+print( "tariff product ", GETOBJECTNAME( this ) )
+
+// determine insured object
+loop( InsObjects, OBJECT_PATH )
+{
+ print( "insured object ", GETOBJECTNAME( InsObjects ) )
+ InsObj = InsObjects
+}
+assert( null != InsObj )
+
+// calculate all elementary products
+loop( ELP, ELP_PATH )
+{
+ premium += ELP.tariff[ InsObj = InsObj ]
+}
+
+// consider all dynamic supplements
+loop( Supplements, SUPPLEMENT_PATH )
+{
+ print( "processing supplement ", GETOBJECTNAME( Supplements ), " with ", Supplements.value, "%" )
+ premium *= ( 100 + Supplements.value ) / 100
+}
+
+// add supplements for payment frequency
+print( "considering payment frequency ", this.paymentFrequency,
+       " with ", PaymentFrequencySupplements_starting2016.supplement.min[ paymentFrequency == this.paymentFrequency ], "%" )
+premium *= ( 100 + PaymentFrequencySupplements_starting2016.supplement.min[ paymentFrequency == this.paymentFrequency ] ) / 100
+
+// assign premium to net premium
+this.netPremium = rnd( premium, 2 )
+Res = this.netPremium
+print( "net premium for product ", GETOBJECTNAME( this ), " = ",  Res )
+]]></pm:text>
+  </pm:sourcecode>
+</pm:formula>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:productmoduletype xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" dataversion="1.5.3.0" final="false" guid="47KUFN7VI0G17AOFKRJFMG2NGG" hasvariants="none" pmid="2300TL5TST" root="none" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>TechnicalSchema::ProductModuleTypes</pm:namespace>
+  <pm:name>SalesProductType</pm:name>
+  <pm:extends>
+    <pm:base guid="E45KSOVRDUG0MA6CDTURRLTNFN">TechnicalSchema::ProductModuleTypes::ProductBaseType</pm:base>
+  </pm:extends>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Verkaufsprodukttyp</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Sales Product Type</pm:stringval>
+  </pm:label>
+  <pm:pm3infotags istemplate="false"/>
+  <pm:image>\MotorInsurance\content\Images\Option_1\SalesProduct.png</pm:image>
+  <pm:productattributes>
+    <pm:attribute abstract="false" datatype="float" final="false" guid="70T7AM873EJNPAG3J8PCA0VIU8" isnullable="true" nrdims="0" optional="false" pmid="B300TL5TST" sealed="false" sortkey="0" visibility="content">
+      <pm:name>insuranceTax</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="de-DE">Versicherungssteuer</pm:stringval>
+        <pm:stringval encoding="none" culture="en-US">Insurance Tax</pm:stringval>
+      </pm:label>
+    </pm:attribute>
+  </pm:productattributes>
+  <pm:contractattributes>
+    <pm:attribute abstract="false" datatype="float" final="false" guid="2PIEKHMOKIJT1BLJ75MI44PR93" isnullable="true" nrdims="0" optional="false" sealed="false" sortkey="0" visibility="content">
+      <pm:name>grossPremium</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="de-DE">Bruttoprämie</pm:stringval>
+        <pm:stringval encoding="none" culture="en-US">Gross Premium</pm:stringval>
+      </pm:label>
+    </pm:attribute>
+  </pm:contractattributes>
+  <pm:relations>
+    <pm:relation abstract="false" autonamed="true" final="false" guid="CV4602AVO2JS593OASRIDHMH9U" inner="false" pmid="C300TL5TST" sealed="false" sortkey="0" visibility="content">
+      <pm:name>Product</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="en-US">Product</pm:stringval>
+        <pm:stringval encoding="none" culture="de-DE">Produkt</pm:stringval>
+      </pm:label>
+      <pm:target guid="7MH21R50EEI6K8PBPUKDO9DJR5">TechnicalSchema::ProductModuleTypes::ProductType</pm:target>
+      <pm:cardinalitycheckrule>
+        <pm:minmaxcardinalities>
+          <pm:min>1</pm:min>
+          <pm:max>unbounded</pm:max>
+        </pm:minmaxcardinalities>
+      </pm:cardinalitycheckrule>
+      <pm:reversedirection>
+        <pm:name>Product_rev</pm:name>
+        <pm:label>
+          <pm:stringval encoding="none" culture="de-DE">Produkt - rückwärts</pm:stringval>
+          <pm:stringval encoding="none" culture="en-US">Product - reverse</pm:stringval>
+        </pm:label>
+      </pm:reversedirection>
+    </pm:relation>
+  </pm:relations>
+</pm:productmoduletype>

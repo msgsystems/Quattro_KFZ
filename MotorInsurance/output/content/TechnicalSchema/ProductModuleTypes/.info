@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:package xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1.5.3.0" guid="31ITOJGSRCJOD95LFU40AG0FJ1" sortkey="0" structural="false">
+  <pm:namespace>TechnicalSchema</pm:namespace>
+  <pm:name>ProductModuleTypes</pm:name>
+  <pm:objecttypes inherited="true"/>
+  <pm:objectfilters inherited="true"/>
+</pm:package>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:tagtype xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" contenttype="value" dataversion="1.5.3.0" final="false" guid="0UUAM1NDJUHLLBFVMMHP2AE11I" pmid="KN10AA5TST" role="category" sealed="false" sortkey="0" unique="true" visibility="content">
+  <pm:namespace>TechnicalSchema::TagTypes</pm:namespace>
+  <pm:name>TariffCriteria</pm:name>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Tariffmerkmale</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Tariff Criteria</pm:stringval>
+  </pm:label>
+  <pm:content>
+    <pm:value datatype="string" isnullable="true" nrdims="0"/>
+  </pm:content>
+</pm:tagtype>

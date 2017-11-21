@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:package xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1.5.3.0" guid="FJBFQBT33UHL785NK8E7ULC8C0" sortkey="0" structural="false">
+  <pm:namespace>ProductModules::SalesProduct</pm:namespace>
+  <pm:name>LiabilityTestStructure</pm:name>
+  <pm:objecttypes inherited="false">
+    <pm:objecttype>compactproductmoduletestcase</pm:objecttype>
+  </pm:objecttypes>
+  <pm:objectfilters inherited="false"/>
+</pm:package>

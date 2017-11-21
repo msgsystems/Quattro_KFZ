@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:productmoduletype xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" dataversion="1.5.3.0" final="false" guid="8L7L31JUO0HCRBM585H27GKMV1" hasvariants="none" pmid="Y200TL5TST" root="none" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>TechnicalSchema::ProductModuleTypes</pm:namespace>
+  <pm:name>CarType</pm:name>
+  <pm:extends>
+    <pm:base guid="8VDFR2MSKMJPO8QQOHMGEM9KNN">TechnicalSchema::ProductModuleTypes::ObjectType</pm:base>
+  </pm:extends>
+  <pm:label>
+    <pm:stringval encoding="none" culture="en-US">Car Type</pm:stringval>
+    <pm:stringval encoding="none" culture="de-DE">Kfz-Typ</pm:stringval>
+  </pm:label>
+  <pm:pm3infotags istemplate="false"/>
+  <pm:contractattributes>
+    <pm:attribute abstract="false" datatype="integer" final="false" guid="7U5LF097EKGGNAG3SF5BTL0I45" isnullable="true" nrdims="0" optional="false" sealed="false" sortkey="0" visibility="content">
+      <pm:name>riskClass</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="de-DE">Wagniskennziffer</pm:stringval>
+        <pm:stringval encoding="none" culture="en-US">Risk Classification</pm:stringval>
+      </pm:label>
+      <pm:tags>
+        <pm:tag>
+          <pm:type guid="0UUAM1NDJUHLLBFVMMHP2AE11I" builtin="false">TechnicalSchema::TagTypes::TariffCriteria</pm:type>
+        </pm:tag>
+      </pm:tags>
+    </pm:attribute>
+    <pm:attribute abstract="false" datatype="float" final="false" guid="8E67KM64R8HFUBS1TM0PUVBNII" isnullable="true" nrdims="0" optional="false" sealed="false" sortkey="0" visibility="content">
+      <pm:name>power</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="de-DE">Leistung in kW</pm:stringval>
+        <pm:stringval encoding="none" culture="en-US">Power in kW</pm:stringval>
+      </pm:label>
+      <pm:tags>
+        <pm:tag>
+          <pm:type guid="0UUAM1NDJUHLLBFVMMHP2AE11I" builtin="false">TechnicalSchema::TagTypes::TariffCriteria</pm:type>
+        </pm:tag>
+      </pm:tags>
+    </pm:attribute>
+  </pm:contractattributes>
+</pm:productmoduletype>

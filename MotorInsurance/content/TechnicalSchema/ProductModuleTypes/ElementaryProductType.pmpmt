@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:productmoduletype xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" dataversion="1.5.3.0" final="false" guid="8TVPS33THEH4IBMR500CBU3I50" hasvariants="none" pmid="U200TL5TST" root="none" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>TechnicalSchema::ProductModuleTypes</pm:namespace>
+  <pm:name>ElementaryProductType</pm:name>
+  <pm:extends>
+    <pm:base guid="E45KSOVRDUG0MA6CDTURRLTNFN">TechnicalSchema::ProductModuleTypes::ProductBaseType</pm:base>
+  </pm:extends>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Elementarprodukttyp</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Elementary Product Type</pm:stringval>
+  </pm:label>
+  <pm:pm3infotags istemplate="false"/>
+  <pm:image>\MotorInsurance\content\Images\Option_1\ElementaryProduct.png</pm:image>
+  <pm:productattributes>
+    <pm:attribute abstract="false" datatype="float" final="false" guid="0HQ5LI5HKMJT89OQGUD9Q1H1UN" isnullable="true" nrdims="0" optional="false" pmid="6300TL5TST" sealed="false" sortkey="0" visibility="content">
+      <pm:name>minimalPremium</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="en-US">Minimal Premium</pm:stringval>
+        <pm:stringval encoding="none" culture="de-DE">Mindestprämie</pm:stringval>
+      </pm:label>
+    </pm:attribute>
+    <pm:attribute abstract="false" datatype="float" final="false" guid="3FH1H9LF9SHBC88F85FVG2G8P0" isnullable="true" nrdims="0" optional="false" pmid="7300TL5TST" sealed="false" sortkey="0" visibility="content">
+      <pm:name>lumpSumPremium</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="en-US">Lump Sum Premium</pm:stringval>
+        <pm:stringval encoding="none" culture="de-DE">Pauschalprämie</pm:stringval>
+      </pm:label>
+    </pm:attribute>
+  </pm:productattributes>
+  <pm:methods>
+    <pm:method abstract="false" datatype="float" final="false" guid="5KPETH06TKGEQ8EB6O06L0VGL5" isnullable="false" nrdims="0" optional="false" sealed="false" sortkey="0" visibility="content">
+      <pm:name>calculateRiskPremium</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="de-DE">Berechne Risikoprämie</pm:stringval>
+        <pm:stringval encoding="none" culture="en-US">Calculate Risk Premium</pm:stringval>
+      </pm:label>
+    </pm:method>
+  </pm:methods>
+  <pm:relations>
+    <pm:relation abstract="false" autonamed="true" final="false" guid="5FP3S99SDKJQ7BBV4LE2JC032P" inner="true" pmid="V200TL5TST" sealed="false" sortkey="0" visibility="content">
+      <pm:name>Coverage</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="de-DE">Deckung</pm:stringval>
+        <pm:stringval encoding="none" culture="en-US">Coverage</pm:stringval>
+      </pm:label>
+      <pm:target guid="43UMHUA4M0JTBBD57V0F5067VK">TechnicalSchema::ProductModuleTypes::CoverageType</pm:target>
+      <pm:cardinalitycheckrule>
+        <pm:minmaxcardinalities>
+          <pm:min>1</pm:min>
+          <pm:max>unbounded</pm:max>
+        </pm:minmaxcardinalities>
+      </pm:cardinalitycheckrule>
+      <pm:reversedirection>
+        <pm:name>Coverage_rev</pm:name>
+        <pm:label>
+          <pm:stringval encoding="none" culture="de-DE">Deckung - rückwärts</pm:stringval>
+          <pm:stringval encoding="none" culture="en-US">Coverage - reverse</pm:stringval>
+        </pm:label>
+      </pm:reversedirection>
+    </pm:relation>
+  </pm:relations>
+</pm:productmoduletype>

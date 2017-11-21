@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:compactcomponent xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" final="false" guid="DOIFIU8FQGGT88P9MLUS27TNQB" sealed="false" sortkey="none" visibility="none" dataversion="1.5.3.0">
+  <pm:namespace>ProductModules</pm:namespace>
+  <pm:name>PartiallyComprehensive</pm:name>
+  <pm:compactcomponentvariants>
+    <pm:compactcomponentvariant guid="17G6P2G8IKIGQ94TF3ADIO5HS7" pmid="N100EO5TST">
+      <pm:name>AdjustmentLevel_1</pm:name>
+      <pm:productmodules>
+        <pm:productmodule abstract="false" final="false" guid="DMQMGDE1T8JEFB6G96APJJRGL5" pmid="O100EO5TST" sealed="false" sortkey="none" visibility="none">
+          <pm:name>PartiallyComprehensive</pm:name>
+          <pm:extends>
+            <pm:base guid="FM8NRAOUO8J9K8EA6I1CAMSPI5">ProductModules::MotorElementaryProduct</pm:base>
+          </pm:extends>
+          <pm:label>
+            <pm:stringval encoding="none" culture="de-DE">Teilkasko</pm:stringval>
+            <pm:stringval encoding="none" culture="en-US">Partially Comprehensive</pm:stringval>
+          </pm:label>
+          <pm:description/>
+          <pm:type guid="AHBKOO7HOOHHMADFSI8CLFRJVA">TechnicalSchema::ProductModuleTypes::PartiallyComprehensiveElementaryProductType</pm:type>
+          <pm:productattributes>
+            <pm:attribute abstract="false" autosetcalcoutput="none" datatype="string" final="false" guid="863TDBP43UJ9RATD87N4FND8BU" isnullable="none" nrdims="0" sealed="false" sortkey="none" visibility="none" autosetcalcresult="none">
+              <pm:name>tariffTable</pm:name>
+              <pm:extends/>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:stringval encoding="none">Constants::Tables::PartiallyComprehensiveTariff</pm:stringval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="none" datatype="float" final="false" guid="AUMTMCM5C4JCF9755637SR6QL9" isnullable="none" nrdims="0" sealed="false" sortkey="none" visibility="none" autosetcalcresult="none">
+              <pm:name>lumpSumPremium</pm:name>
+              <pm:extends/>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>100.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="none" datatype="float" final="false" guid="C0M29A4Q5OIMJ843D1I7O8KCPK" isnullable="none" nrdims="0" sealed="false" sortkey="none" visibility="none" autosetcalcresult="none">
+              <pm:name>minimalPremium</pm:name>
+              <pm:extends/>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>50.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+          </pm:productattributes>
+          <pm:relations>
+            <pm:relation abstract="false" autonamed="true" final="false" guid="9TLGKJ66COHOTBHT119EEPK8EM" inner="true" pmid="G300EO5TST" sealed="false" sortkey="0" visibility="content">
+              <pm:name>PartiallyComprehensiveCoverage</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Teilkasko Deckung</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Partially Comprehensive Coverage</pm:stringval>
+              </pm:label>
+              <pm:type guid="5FP3S99SDKJQ7BBV4LE2JC032P">Coverage</pm:type>
+              <pm:target guid="4MPEB19BFUJB4BA7MAMGMBP0MO">PartiallyComprehensiveCoverage</pm:target>
+              <pm:defaultcardinalityrule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>1</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultcardinalityrule>
+              <pm:cardinalitycheckrule>
+                <pm:minmaxcardinalities>
+                  <pm:min>1</pm:min>
+                  <pm:max>1</pm:max>
+                </pm:minmaxcardinalities>
+              </pm:cardinalitycheckrule>
+              <pm:reversedirection>
+                <pm:name>PartiallyComprehensive</pm:name>
+                <pm:label>
+                  <pm:stringval encoding="none" culture="de-DE">Teilkasko-Deckung - rückwärts</pm:stringval>
+                  <pm:stringval encoding="none" culture="en-US">Partially Comprehensive Coverage - reverse</pm:stringval>
+                </pm:label>
+                <pm:defaultcardinalityrule/>
+                <pm:cardinalitycheckrule/>
+              </pm:reversedirection>
+            </pm:relation>
+          </pm:relations>
+        </pm:productmodule>
+        <pm:productmodule abstract="false" final="false" guid="4MPEB19BFUJB4BA7MAMGMBP0MO" pmid="E300EO5TST" sealed="false" sortkey="0" visibility="content">
+          <pm:name>PartiallyComprehensiveCoverage</pm:name>
+          <pm:label>
+            <pm:stringval encoding="none" culture="en-US">Partially Comprehensive Coverage</pm:stringval>
+            <pm:stringval encoding="none" culture="de-DE">Teilkasko-Deckung</pm:stringval>
+          </pm:label>
+          <pm:type guid="43UMHUA4M0JTBBD57V0F5067VK">TechnicalSchema::ProductModuleTypes::CoverageType</pm:type>
+          <pm:productattributes>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="AGL8EJ1OIQIST93I2KM8LMG3TC" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="content" autosetcalcresult="false">
+              <pm:name>coverageAmount</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Coverage Amount</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Deckungssumme</pm:stringval>
+              </pm:label>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>5.0E7</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+          </pm:productattributes>
+        </pm:productmodule>
+      </pm:productmodules>
+      <pm:rootproductmodule>PartiallyComprehensive</pm:rootproductmodule>
+    </pm:compactcomponentvariant>
+  </pm:compactcomponentvariants>
+</pm:compactcomponent>

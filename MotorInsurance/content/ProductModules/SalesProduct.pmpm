@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:compactcomponent xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" final="false" guid="F34MQOAD08IDJ921BT2J5RMUSI" sealed="false" sortkey="none" visibility="none" dataversion="1.5.3.0">
+  <pm:namespace>ProductModules</pm:namespace>
+  <pm:name>SalesProduct</pm:name>
+  <pm:compactcomponentvariants>
+    <pm:compactcomponentvariant guid="5MEVSTGAEKIB483B09P9B7JHFK" pmid="K100EO5TST">
+      <pm:name>AdjustmentLevel_1</pm:name>
+      <pm:productmodules>
+        <pm:productmodule abstract="false" final="false" guid="9QK4N8HMG6IPHA9CM8DK3SE2OQ" pmid="L100EO5TST" sealed="false" sortkey="0" visibility="content">
+          <pm:name>SalesProduct</pm:name>
+          <pm:label>
+            <pm:stringval encoding="none" culture="de-DE">Verkaufsprodukt</pm:stringval>
+            <pm:stringval encoding="none" culture="en-US">Sales Product</pm:stringval>
+          </pm:label>
+          <pm:type guid="47KUFN7VI0G17AOFKRJFMG2NGG">TechnicalSchema::ProductModuleTypes::SalesProductType</pm:type>
+          <pm:productattributes>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="E0VVCKECKOJI7BSFB5U006O49J" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="content" autosetcalcresult="false">
+              <pm:name>insuranceTax</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Insurance Tax</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Versicherungssteuer</pm:stringval>
+              </pm:label>
+              <pm:valuerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:floatval>19.0</pm:floatval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:valuerule>
+            </pm:attribute>
+          </pm:productattributes>
+          <pm:contractattributes>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="DM03KFC5IAH0S9AM85G5Q3IV7G" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="content" autosetcalcresult="false">
+              <pm:name>grossPremium</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Bruttoprämie</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Gross Premium</pm:stringval>
+              </pm:label>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="EPFUB479HGGGG9BFKKUASKVMUB" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="content" autosetcalcresult="false">
+              <pm:name>netPremium</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Net Premium</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Nettoprämie</pm:stringval>
+              </pm:label>
+            </pm:attribute>
+          </pm:contractattributes>
+          <pm:methods>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="6B726VRGEMIR998JPPUNH2N01N" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="content">
+              <pm:name>tariff</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Tariff</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Tarifiere</pm:stringval>
+              </pm:label>
+              <pm:defaultfunction guid="6NHN77FI9CHBK8AP0FGN7QGAKO">Mathematics::Functions::tariffSalesProduct</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="6NHN77FI9CHBK8AP0FGN7QGAKO">
+                    <pm:name>Mathematics::Functions::tariffSalesProduct</pm:name>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+          </pm:methods>
+          <pm:relations>
+            <pm:relation abstract="false" autonamed="true" final="false" guid="FI369MGC0GHH0BE9OHBI19SEKB" inner="false" pmid="Y300EO5TST" sealed="false" sortkey="0" visibility="content">
+              <pm:name>PassengerCarProduct</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Pkw-Produkt</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Passenger Car Product</pm:stringval>
+              </pm:label>
+              <pm:type guid="CV4602AVO2JS593OASRIDHMH9U">Product</pm:type>
+              <pm:target guid="3BGSHQ5JU2JC48RD43U19AOHIR">ProductModules::PassengerCarProduct</pm:target>
+              <pm:defaultcardinalityrule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>1</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultcardinalityrule>
+              <pm:cardinalitycheckrule>
+                <pm:minmaxcardinalities>
+                  <pm:min>1</pm:min>
+                  <pm:max>unbounded</pm:max>
+                </pm:minmaxcardinalities>
+              </pm:cardinalitycheckrule>
+              <pm:reversedirection>
+                <pm:name>SalesProduct</pm:name>
+                <pm:label>
+                  <pm:stringval encoding="none" culture="de-DE">Pkw-Produkt - rückwärts</pm:stringval>
+                  <pm:stringval encoding="none" culture="en-US">Passenger Car Product - reverse</pm:stringval>
+                </pm:label>
+                <pm:defaultcardinalityrule/>
+                <pm:cardinalitycheckrule/>
+              </pm:reversedirection>
+            </pm:relation>
+            <pm:relation abstract="false" autonamed="true" final="false" guid="192IMVJ94KJCF8VK8ROJKRFR28" inner="false" pmid="I400EO5TST" sealed="false" sortkey="0" visibility="content">
+              <pm:name>Supplement</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Supplement/Rebate</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Zuschlag/Nachlass</pm:stringval>
+              </pm:label>
+              <pm:type guid="FK3MJBDTU4I9L98GES56342K6H">Supplement</pm:type>
+              <pm:target guid="FOSRUP8VOOHT3AF2FJTV0B4QOM">ProductModules::Supplement</pm:target>
+              <pm:defaultcardinalityrule/>
+              <pm:cardinalitycheckrule>
+                <pm:minmaxcardinalities>
+                  <pm:min>0</pm:min>
+                  <pm:max>1</pm:max>
+                </pm:minmaxcardinalities>
+              </pm:cardinalitycheckrule>
+              <pm:reversedirection>
+                <pm:name>SalesProduct</pm:name>
+                <pm:label>
+                  <pm:stringval encoding="none" culture="en-US">Supplement/Rebate - reverse</pm:stringval>
+                  <pm:stringval encoding="none" culture="de-DE">Zuschlag/Nachlass - rückwärts</pm:stringval>
+                </pm:label>
+                <pm:defaultcardinalityrule/>
+                <pm:cardinalitycheckrule>
+                  <pm:minmaxcardinalities>
+                    <pm:min>0</pm:min>
+                    <pm:max>1</pm:max>
+                  </pm:minmaxcardinalities>
+                </pm:cardinalitycheckrule>
+              </pm:reversedirection>
+            </pm:relation>
+          </pm:relations>
+        </pm:productmodule>
+      </pm:productmodules>
+      <pm:rootproductmodule>SalesProduct</pm:rootproductmodule>
+    </pm:compactcomponentvariant>
+  </pm:compactcomponentvariants>
+</pm:compactcomponent>

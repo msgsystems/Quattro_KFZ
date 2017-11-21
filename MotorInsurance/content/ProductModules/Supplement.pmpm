@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:compactcomponent xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" final="false" guid="FOSRUP8VOOHT3AF2FJTV0B4QOM" sealed="false" sortkey="none" visibility="none" dataversion="1.5.3.0">
+  <pm:namespace>ProductModules</pm:namespace>
+  <pm:name>Supplement</pm:name>
+  <pm:compactcomponentvariants>
+    <pm:compactcomponentvariant guid="EQL5SAHHE8HMTAPQE3K200MA6F" pmid="R300EO5TST">
+      <pm:name>Anpassungsstufe</pm:name>
+      <pm:productmodules>
+        <pm:productmodule abstract="false" final="false" guid="92GRQPA192GSEBFKI1S4C6K3PQ" pmid="S300EO5TST" sealed="false" sortkey="0" visibility="content">
+          <pm:name>Supplement</pm:name>
+          <pm:label>
+            <pm:stringval encoding="none" culture="de-DE">Zuschlag/Nachlass</pm:stringval>
+            <pm:stringval encoding="none" culture="en-US">Supplement/Rebate</pm:stringval>
+          </pm:label>
+          <pm:type guid="ELOL56LOI0G4R9RTO9SJBTR4PQ">TechnicalSchema::ProductModuleTypes::SupplementType</pm:type>
+          <pm:productattributes>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="0V8KC6IP00IBTBJP7SVUS6TALN" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="content" autosetcalcresult="false">
+              <pm:name>value</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Value</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Wert</pm:stringval>
+              </pm:label>
+            </pm:attribute>
+          </pm:productattributes>
+        </pm:productmodule>
+      </pm:productmodules>
+      <pm:rootproductmodule>Supplement</pm:rootproductmodule>
+    </pm:compactcomponentvariant>
+  </pm:compactcomponentvariants>
+</pm:compactcomponent>

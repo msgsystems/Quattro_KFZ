@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:productmoduletype xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" dataversion="1.5.3.0" final="false" guid="2A39RASROOHLPBUKA9ERLKSIC3" hasvariants="none" pmid="Z200TL5TST" root="none" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>TechnicalSchema::ProductModuleTypes</pm:namespace>
+  <pm:name>PassengerCarType</pm:name>
+  <pm:extends>
+    <pm:base guid="8L7L31JUO0HCRBM585H27GKMV1">TechnicalSchema::ProductModuleTypes::CarType</pm:base>
+  </pm:extends>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Pkw-Typ</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Passenger Car Type</pm:stringval>
+  </pm:label>
+  <pm:pm3infotags istemplate="false"/>
+  <pm:contractattributes>
+    <pm:attribute abstract="false" datatype="integer" final="false" guid="2K0SHD2M36GVLB2R6DE6RHMK4R" isnullable="true" nrdims="0" optional="false" sealed="false" sortkey="0" visibility="content">
+      <pm:name>overnightCarStorage</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="en-US">Overnight Car Storage</pm:stringval>
+        <pm:stringval encoding="none" culture="de-DE">Abstellort</pm:stringval>
+      </pm:label>
+      <pm:tags>
+        <pm:tag>
+          <pm:type guid="0UUAM1NDJUHLLBFVMMHP2AE11I" builtin="false">TechnicalSchema::TagTypes::TariffCriteria</pm:type>
+        </pm:tag>
+      </pm:tags>
+      <pm:valuecheckrule>
+        <pm:or>
+          <pm:rule>
+            <pm:validvaluesfromenum>
+              <pm:enumeration guid="FO7O5JVP8CGKN9LHOH3JQ07UNA">Constants::Enumerations::OvernightCarStorage</pm:enumeration>
+            </pm:validvaluesfromenum>
+          </pm:rule>
+          <pm:rule>
+            <pm:onlynull/>
+          </pm:rule>
+        </pm:or>
+      </pm:valuecheckrule>
+    </pm:attribute>
+    <pm:attribute abstract="false" datatype="float" final="false" guid="9GD1LNNHPEI7ABRTDGIHF5VBHK" isnullable="true" nrdims="0" optional="false" sealed="false" sortkey="0" visibility="content">
+      <pm:name>yearlyMileage</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="de-DE">Jährliche Fahrleistung</pm:stringval>
+        <pm:stringval encoding="none" culture="en-US">Yearly Mileage</pm:stringval>
+      </pm:label>
+      <pm:tags>
+        <pm:tag>
+          <pm:type guid="0UUAM1NDJUHLLBFVMMHP2AE11I" builtin="false">TechnicalSchema::TagTypes::TariffCriteria</pm:type>
+        </pm:tag>
+      </pm:tags>
+    </pm:attribute>
+  </pm:contractattributes>
+</pm:productmoduletype>

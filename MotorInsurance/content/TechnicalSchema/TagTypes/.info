@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:package xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1.5.3.0" guid="B7DFA81I26GA597GFM6PM6LQNP" sortkey="140" structural="false">
+  <pm:namespace>TechnicalSchema</pm:namespace>
+  <pm:name>TagTypes</pm:name>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Tagtypen</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Tag types</pm:stringval>
+  </pm:label>
+  <pm:objecttypes inherited="false">
+    <pm:objecttype>tagtype</pm:objecttype>
+  </pm:objecttypes>
+</pm:package>

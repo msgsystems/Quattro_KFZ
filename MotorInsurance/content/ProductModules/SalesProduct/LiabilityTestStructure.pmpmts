@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:compactproductmoduletestinstance xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1.5.3.0" guid="EJV0ISLFRAI7086IO5H8D5TD5Q" pmid="C800AK5MSG" sortkey="0" salesdate="20150908" validdate="20150908">
+  <pm:namespace>ProductModules::SalesProduct</pm:namespace>
+  <pm:name>LiabilityTestStructure</pm:name>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Haftpflicht-Teststruktur</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Liability Test Structure</pm:stringval>
+  </pm:label>
+  <pm:instructions>
+    <pm:instruction guid="297VLPHDNEHI48E1L7LS7RHI91">
+      <pm:createproductmoduleinstance id="0" salesdate="20160908" validdate="20160908">
+        <pm:instancename>SalesProduct</pm:instancename>
+        <pm:productmodule guid="9QK4N8HMG6IPHA9CM8DK3SE2OQ">ProductModules::SalesProduct::SalesProduct</pm:productmodule>
+      </pm:createproductmoduleinstance>
+    </pm:instruction>
+    <pm:instruction guid="6PCGG45OJ8IQA924F06L72A6SL">
+      <pm:createproductmoduleinstance id="2" salesdate="20160908" validdate="20160908">
+        <pm:instancename>PassengerCarProduct</pm:instancename>
+        <pm:productmodule guid="43UVNDMFJUICA8OVPKIV7TKI9E">ProductModules::PassengerCarProduct::PassengerCarProduct</pm:productmodule>
+      </pm:createproductmoduleinstance>
+    </pm:instruction>
+    <pm:instruction guid="907677OS5UIJG8UDNQ5V6ES0O5">
+      <pm:createproductmoduleinstance id="23" salesdate="20160908" validdate="20160908">
+        <pm:instancename>Liability</pm:instancename>
+        <pm:productmodule guid="84V00UF26QILD92931N2TV5GPG">ProductModules::Liability::Liability</pm:productmodule>
+      </pm:createproductmoduleinstance>
+    </pm:instruction>
+    <pm:instruction guid="FR3F3B8MMOHDAANCDSV65IMHUE">
+      <pm:setattributevalue ownerid="23">
+        <pm:name>regionalClass</pm:name>
+        <pm:value>
+          <pm:scalarvalue>
+            <pm:integerval>17</pm:integerval>
+          </pm:scalarvalue>
+        </pm:value>
+      </pm:setattributevalue>
+    </pm:instruction>
+    <pm:instruction guid="10JUD5FHSAIQC8G3KDRCG6DT4S">
+      <pm:setattributevalue ownerid="23">
+        <pm:name>typeClass</pm:name>
+        <pm:value>
+          <pm:scalarvalue>
+            <pm:integerval>19</pm:integerval>
+          </pm:scalarvalue>
+        </pm:value>
+      </pm:setattributevalue>
+    </pm:instruction>
+    <pm:instruction guid="8P5A5ALKB0HMJ8OQGGJB0R7VSB">
+      <pm:createproductmoduleinstance id="25" salesdate="20160908" validdate="20160908">
+        <pm:instancename>LiabilityCoverage</pm:instancename>
+        <pm:productmodule guid="CACFIIPLA4GJJ8JCCT2CBTNKS9">ProductModules::Liability::LiabilityCoverage</pm:productmodule>
+      </pm:createproductmoduleinstance>
+    </pm:instruction>
+    <pm:instruction guid="CM281FQD1OH7Q9EB8QGE4F2C0V">
+      <pm:createproductmoduleinstance id="27" salesdate="20160908" validdate="20160908">
+        <pm:instancename>PassengerCar</pm:instancename>
+        <pm:productmodule guid="7GO6PPL1BSJBTBRRCICLEGBISN">ProductModules::PassengerCarProduct::PassengerCar</pm:productmodule>
+      </pm:createproductmoduleinstance>
+    </pm:instruction>
+    <pm:instruction guid="A5AI9039HGG8QA13TKSIEKLO3I">
+      <pm:setattributevalue ownerid="27">
+        <pm:name>power</pm:name>
+        <pm:value>
+          <pm:scalarvalue>
+            <pm:floatval>88.0</pm:floatval>
+          </pm:scalarvalue>
+        </pm:value>
+      </pm:setattributevalue>
+    </pm:instruction>
+    <pm:instruction guid="F17D3G71JGIJQAF2FTMS25OKLV">
+      <pm:connect id="24" sourceid="2" targetid="23">
+        <pm:instancename>Liability</pm:instancename>
+        <pm:relation>Liability</pm:relation>
+      </pm:connect>
+    </pm:instruction>
+    <pm:instruction guid="1JI7SJDO0OIF98F3K300PFMDMF">
+      <pm:connect id="26" sourceid="23" targetid="25">
+        <pm:instancename>LiabilityCoverage</pm:instancename>
+        <pm:relation>LiabilityCoverage</pm:relation>
+      </pm:connect>
+    </pm:instruction>
+    <pm:instruction guid="0NN217R6GGGOC9AG1DJO81V7S3">
+      <pm:connect id="28" sourceid="2" targetid="27">
+        <pm:instancename>PassengerCar</pm:instancename>
+        <pm:relation>PassengerCar</pm:relation>
+      </pm:connect>
+    </pm:instruction>
+    <pm:instruction guid="CKJ1RQFRFEHD5ARSSKDNR3BISE">
+      <pm:connect id="3" sourceid="0" targetid="2">
+        <pm:instancename>PassengerCarProduct</pm:instancename>
+        <pm:relation>PassengerCarProduct</pm:relation>
+      </pm:connect>
+    </pm:instruction>
+  </pm:instructions>
+  <pm:processingoptions autocheckattributesatcreate="false" autocheckattributesonset="false" currentproductculture="de-DE" fallbackproductculture="de-DE" pm3compatibilitymode="false" skipnullattributesinvaluepaths="false"/>
+</pm:compactproductmoduletestinstance>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:productmoduletype xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" dataversion="1.5.3.0" final="false" guid="7MH21R50EEI6K8PBPUKDO9DJR5" hasvariants="none" pmid="0300TL5TST" root="none" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>TechnicalSchema::ProductModuleTypes</pm:namespace>
+  <pm:name>ProductType</pm:name>
+  <pm:extends>
+    <pm:base guid="E45KSOVRDUG0MA6CDTURRLTNFN">TechnicalSchema::ProductModuleTypes::ProductBaseType</pm:base>
+  </pm:extends>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Produkttyp</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Product Type</pm:stringval>
+  </pm:label>
+  <pm:pm3infotags istemplate="false"/>
+  <pm:image>\MotorInsurance\content\Images\Option_1\Product.png</pm:image>
+  <pm:contractattributes>
+    <pm:attribute abstract="false" datatype="integer" final="false" guid="345DOAIK4AI37AMIIQK0J7V48L" isnullable="true" nrdims="0" optional="false" sealed="false" sortkey="0" visibility="content">
+      <pm:name>paymentFrequency</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="de-DE">Zahlungsrhythmus</pm:stringval>
+        <pm:stringval encoding="none" culture="en-US">Payment Frequency</pm:stringval>
+      </pm:label>
+      <pm:tags>
+        <pm:tag>
+          <pm:type guid="0UUAM1NDJUHLLBFVMMHP2AE11I" builtin="false">TechnicalSchema::TagTypes::TariffCriteria</pm:type>
+        </pm:tag>
+      </pm:tags>
+    </pm:attribute>
+  </pm:contractattributes>
+  <pm:relations>
+    <pm:relation abstract="false" autonamed="true" final="false" guid="CBP2P1FNUEG7CB06UNCB73DVEA" inner="false" pmid="9300TL5TST" sealed="false" sortkey="0" visibility="content">
+      <pm:name>ElementaryProduct</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="en-US">Elementary Product</pm:stringval>
+        <pm:stringval encoding="none" culture="de-DE">Elementarprodukt</pm:stringval>
+      </pm:label>
+      <pm:target guid="8TVPS33THEH4IBMR500CBU3I50">TechnicalSchema::ProductModuleTypes::ElementaryProductType</pm:target>
+      <pm:cardinalitycheckrule>
+        <pm:minmaxcardinalities>
+          <pm:min>1</pm:min>
+          <pm:max>unbounded</pm:max>
+        </pm:minmaxcardinalities>
+      </pm:cardinalitycheckrule>
+      <pm:reversedirection>
+        <pm:name>ElementaryProduct_rev</pm:name>
+        <pm:label>
+          <pm:stringval encoding="none" culture="en-US">Elementary Product - reverse</pm:stringval>
+          <pm:stringval encoding="none" culture="de-DE">Elementarprodukt - rückwärts</pm:stringval>
+        </pm:label>
+      </pm:reversedirection>
+    </pm:relation>
+    <pm:relation abstract="false" autonamed="true" final="false" guid="9KGIKLCQ5OI3J838PKM01HA0BU" inner="true" pmid="A300TL5TST" sealed="false" sortkey="0" visibility="content">
+      <pm:name>ObjectType</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="de-DE">Objekttyp</pm:stringval>
+        <pm:stringval encoding="none" culture="en-US">Object Type</pm:stringval>
+      </pm:label>
+      <pm:target guid="8VDFR2MSKMJPO8QQOHMGEM9KNN">TechnicalSchema::ProductModuleTypes::ObjectType</pm:target>
+      <pm:cardinalitycheckrule>
+        <pm:minmaxcardinalities>
+          <pm:min>1</pm:min>
+          <pm:max>unbounded</pm:max>
+        </pm:minmaxcardinalities>
+      </pm:cardinalitycheckrule>
+      <pm:reversedirection>
+        <pm:name>ObjectType_rev</pm:name>
+        <pm:label>
+          <pm:stringval encoding="none" culture="de-DE">Objekttyp - rückwärts</pm:stringval>
+          <pm:stringval encoding="none" culture="en-US">Object Type - reverse</pm:stringval>
+        </pm:label>
+      </pm:reversedirection>
+    </pm:relation>
+  </pm:relations>
+</pm:productmoduletype>

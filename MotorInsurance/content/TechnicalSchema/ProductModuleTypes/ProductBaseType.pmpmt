@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:productmoduletype xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" dataversion="1.5.3.0" final="false" guid="E45KSOVRDUG0MA6CDTURRLTNFN" hasvariants="either" pmid="R200TL5TST" root="false" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>TechnicalSchema::ProductModuleTypes</pm:namespace>
+  <pm:name>ProductBaseType</pm:name>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Produktbasistyp</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Product Base Type</pm:stringval>
+  </pm:label>
+  <pm:pm3infotags istemplate="false"/>
+  <pm:contractattributes>
+    <pm:attribute abstract="false" datatype="float" final="false" guid="CQQ438K7CSGMVAUDLUMP2QJS33" isnullable="true" nrdims="0" optional="false" sealed="false" sortkey="0" visibility="content">
+      <pm:name>netPremium</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="en-US">Net Premium</pm:stringval>
+        <pm:stringval encoding="none" culture="de-DE">Nettoprämie</pm:stringval>
+      </pm:label>
+    </pm:attribute>
+  </pm:contractattributes>
+  <pm:methods>
+    <pm:method abstract="false" datatype="float" final="false" guid="7SR0G8TTAUJ86981OU9IP0C6QU" isnullable="false" nrdims="0" optional="false" sealed="false" sortkey="0" visibility="content">
+      <pm:name>tariff</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="en-US">Tariff</pm:stringval>
+        <pm:stringval encoding="none" culture="de-DE">Tarifiere</pm:stringval>
+      </pm:label>
+    </pm:method>
+  </pm:methods>
+  <pm:relations>
+    <pm:relation abstract="false" autonamed="true" final="false" guid="FK3MJBDTU4I9L98GES56342K6H" inner="false" pmid="T200TL5TST" sealed="false" sortkey="0" visibility="content">
+      <pm:name>Supplement</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="de-DE">Zuschlag/Nachlass</pm:stringval>
+        <pm:stringval encoding="none" culture="en-US">Supplement/Rebate</pm:stringval>
+      </pm:label>
+      <pm:target guid="ELOL56LOI0G4R9RTO9SJBTR4PQ">TechnicalSchema::ProductModuleTypes::SupplementType</pm:target>
+      <pm:reversedirection>
+        <pm:name>Supplement_rev</pm:name>
+        <pm:label>
+          <pm:stringval encoding="none" culture="en-US">Supplement/Rebate - reverse</pm:stringval>
+          <pm:stringval encoding="none" culture="de-DE">Zuschlag/Nachlass - rückwärts</pm:stringval>
+        </pm:label>
+      </pm:reversedirection>
+    </pm:relation>
+  </pm:relations>
+</pm:productmoduletype>

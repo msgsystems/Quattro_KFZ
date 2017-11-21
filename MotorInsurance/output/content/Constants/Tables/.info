@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:package xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1.5.3.0" guid="22QM54A8TEJCS9KTDREA2CIAVO" sortkey="0" structural="false">
+  <pm:namespace>Constants</pm:namespace>
+  <pm:name>Tables</pm:name>
+  <pm:objecttypes inherited="true"/>
+  <pm:objectfilters inherited="true"/>
+</pm:package>

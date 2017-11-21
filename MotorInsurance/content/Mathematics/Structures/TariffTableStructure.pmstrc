@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:structure xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" dataversion="1.5.3.0" final="false" guid="78Q1784LBMJVL82US355ROC0K6" pmid="K300TL5TST" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>Mathematics::Structures</pm:namespace>
+  <pm:name>TariffTableStructure</pm:name>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Tariftabellen-Struktur</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Tariff Table Structure</pm:stringval>
+  </pm:label>
+  <pm:type guid="CADK1LOOIMI338N1L1NV44USUF">TechnicalSchema::StructureTypes::TariffTableType</pm:type>
+  <pm:fields>
+    <pm:field abstract="false" datatype="integer" final="false" guid="4O2O80ONF6I9AAA1P37NUV2IC9" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="content">
+      <pm:name>riskClass</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="de-DE">Wagniskennziffer</pm:stringval>
+        <pm:stringval encoding="none" culture="en-US">Risk Classification</pm:stringval>
+      </pm:label>
+    </pm:field>
+    <pm:field abstract="false" datatype="float" final="false" guid="C37DVA82QOHCG9NQ2BPT7TF868" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="content">
+      <pm:name>power</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="de-DE">Leistung in kW</pm:stringval>
+        <pm:stringval encoding="none" culture="en-US">Power in kW</pm:stringval>
+      </pm:label>
+    </pm:field>
+    <pm:field abstract="false" datatype="float" final="false" guid="19G5P97GBUGB5AEI9KQH6P1GSP" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="content">
+      <pm:name>premium</pm:name>
+      <pm:label>
+        <pm:stringval encoding="none" culture="en-US">Premium</pm:stringval>
+        <pm:stringval encoding="none" culture="de-DE">Prämie</pm:stringval>
+      </pm:label>
+    </pm:field>
+  </pm:fields>
+</pm:structure>

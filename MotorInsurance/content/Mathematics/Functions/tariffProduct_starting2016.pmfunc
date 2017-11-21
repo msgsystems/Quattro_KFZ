@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:function xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" cachesize="unbounded" cachingmode="none" datatype="float" dataversion="1.5.3.0" final="false" guid="ED9RNR5OH0GMUA3ULVAJLOPCPA" isnullable="false" nrdims="0" pmid="U400AK5MSG" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>Mathematics::Functions</pm:namespace>
+  <pm:name>tariffProduct_starting2016</pm:name>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Tarifiere Produkt - ab 2016</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Tariff Product - starting 2016</pm:stringval>
+  </pm:label>
+  <pm:baseformula guid="9K9BLJD34GHVVATSB1BMB2BFQ4">Mathematics::Formulas::tariffProduct_starting2016</pm:baseformula>
+  <pm:resultname>Res</pm:resultname>
+</pm:function>

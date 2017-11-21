@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:package xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1.5.3.0" guid="DPCQJBDD74JO3972UDIJH7QHQ5" sortkey="0" structural="false">
+  <pm:namespace>ProductModules</pm:namespace>
+  <pm:name>SalesProduct</pm:name>
+  <pm:objecttypes inherited="false">
+    <pm:objecttype>compactproductmoduletestinstance</pm:objecttype>
+  </pm:objecttypes>
+</pm:package>

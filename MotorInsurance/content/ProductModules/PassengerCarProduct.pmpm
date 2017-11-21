@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:compactcomponent xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" final="false" guid="3BGSHQ5JU2JC48RD43U19AOHIR" sealed="false" sortkey="0" visibility="content" dataversion="1.5.3.0">
+  <pm:namespace>ProductModules</pm:namespace>
+  <pm:name>PassengerCarProduct</pm:name>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Pkw-Produkt</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Passenger Car Product</pm:stringval>
+  </pm:label>
+  <pm:compactcomponentgenerations>
+    <pm:generation guid="6E5P0T9DF0HMR8SRF7ALN3HGF7" pmid="A400AK5MSG">
+      <pm:name>Generation2000</pm:name>
+      <pm:variantassignments>
+        <pm:variantassignment>
+          <pm:variant>AdjustmentLevel2015</pm:variant>
+          <pm:selectionrule>
+            <pm:validdates>
+              <pm:to>20151231</pm:to>
+            </pm:validdates>
+          </pm:selectionrule>
+        </pm:variantassignment>
+        <pm:variantassignment>
+          <pm:variant>AdjustmentLevel2016</pm:variant>
+          <pm:selectionrule>
+            <pm:validdates>
+              <pm:from>20160101</pm:from>
+            </pm:validdates>
+          </pm:selectionrule>
+        </pm:variantassignment>
+      </pm:variantassignments>
+    </pm:generation>
+  </pm:compactcomponentgenerations>
+  <pm:compactcomponentvariants>
+    <pm:compactcomponentvariant guid="5FPEHLED2MI7CA6UV94F45P7SD" pmid="8000EO5TST">
+      <pm:name>AdjustmentLevel2015</pm:name>
+      <pm:productmodules>
+        <pm:productmodule abstract="false" final="false" guid="AHEMIP9TG8G54BK49SVJDI4THM" pmid="9000EO5TST" sealed="false" sortkey="0" visibility="content">
+          <pm:name>PassengerCarProduct</pm:name>
+          <pm:type guid="7MH21R50EEI6K8PBPUKDO9DJR5">TechnicalSchema::ProductModuleTypes::ProductType</pm:type>
+          <pm:contractattributes>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="8IPFUAHOMGHRJ9UC6112J69LA7" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="content" autosetcalcresult="false">
+              <pm:name>paymentFrequency</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Zahlungsrhythmus</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Payment Frequency</pm:stringval>
+              </pm:label>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>1</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="94B9NJ7HMQHQS8L46VOSCB5ICD" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="content" autosetcalcresult="false">
+              <pm:name>netPremium</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Net Premium</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Nettoprämie</pm:stringval>
+              </pm:label>
+            </pm:attribute>
+          </pm:contractattributes>
+          <pm:methods>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="FPH4AL7VIAGERB8SRC8GV62NCD" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="content">
+              <pm:name>tariff</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Tariff</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Tarifiere</pm:stringval>
+              </pm:label>
+              <pm:defaultfunction guid="E5K9D58U2QGPIA955E2OH8MVUB">Mathematics::Functions::tariffProduct</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="E5K9D58U2QGPIA955E2OH8MVUB">
+                    <pm:name>Mathematics::Functions::tariffProduct</pm:name>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+          </pm:methods>
+          <pm:relations>
+            <pm:relation abstract="false" autonamed="true" final="false" guid="FK7TQ5P254HKNB46S252LAIHA4" inner="true" pmid="J100EO5TST" sealed="false" sortkey="0" visibility="content">
+              <pm:name>PassengerCar</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Passenger Car</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Pkw</pm:stringval>
+              </pm:label>
+              <pm:type guid="9KGIKLCQ5OI3J838PKM01HA0BU">ObjectType</pm:type>
+              <pm:target guid="0F35UCM0M8HLQARQS3FTRFE54L">PassengerCar</pm:target>
+              <pm:defaultcardinalityrule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>1</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultcardinalityrule>
+              <pm:cardinalitycheckrule>
+                <pm:minmaxcardinalities>
+                  <pm:min>1</pm:min>
+                  <pm:max>1</pm:max>
+                </pm:minmaxcardinalities>
+              </pm:cardinalitycheckrule>
+              <pm:reversedirection>
+                <pm:name>PassengerCarProduct</pm:name>
+                <pm:label>
+                  <pm:stringval encoding="none" culture="en-US">Passenger Car - reverse</pm:stringval>
+                  <pm:stringval encoding="none" culture="de-DE">Pkw - rückwärts</pm:stringval>
+                </pm:label>
+                <pm:defaultcardinalityrule>
+                  <pm:value>
+                    <pm:scalarvalue>
+                      <pm:integerval>1</pm:integerval>
+                    </pm:scalarvalue>
+                  </pm:value>
+                </pm:defaultcardinalityrule>
+                <pm:cardinalitycheckrule>
+                  <pm:minmaxcardinalities>
+                    <pm:min>0</pm:min>
+                    <pm:max>1</pm:max>
+                  </pm:minmaxcardinalities>
+                </pm:cardinalitycheckrule>
+              </pm:reversedirection>
+            </pm:relation>
+            <pm:relation abstract="false" autonamed="true" final="false" guid="8PEQD7NVBQG0UBBK9DMBHH5E7A" inner="false" pmid="E400EO5TST" sealed="false" sortkey="0" visibility="content">
+              <pm:name>Liability</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Haftpflicht</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Liability</pm:stringval>
+              </pm:label>
+              <pm:type guid="CBP2P1FNUEG7CB06UNCB73DVEA">ElementaryProduct</pm:type>
+              <pm:target guid="7FQN32RKASJJQBO17NEGTQ6V8N">ProductModules::Liability</pm:target>
+              <pm:defaultcardinalityrule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>1</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultcardinalityrule>
+              <pm:cardinalitycheckrule>
+                <pm:minmaxcardinalities>
+                  <pm:min>1</pm:min>
+                  <pm:max>1</pm:max>
+                </pm:minmaxcardinalities>
+              </pm:cardinalitycheckrule>
+              <pm:reversedirection>
+                <pm:name>PassengerCarProduct</pm:name>
+                <pm:label>
+                  <pm:stringval encoding="none" culture="de-DE">Haftpflicht - rückwärts</pm:stringval>
+                  <pm:stringval encoding="none" culture="en-US">Liability - reverse</pm:stringval>
+                </pm:label>
+                <pm:defaultcardinalityrule>
+                  <pm:value>
+                    <pm:scalarvalue>
+                      <pm:integerval>1</pm:integerval>
+                    </pm:scalarvalue>
+                  </pm:value>
+                </pm:defaultcardinalityrule>
+                <pm:cardinalitycheckrule>
+                  <pm:minmaxcardinalities>
+                    <pm:min>0</pm:min>
+                    <pm:max>1</pm:max>
+                  </pm:minmaxcardinalities>
+                </pm:cardinalitycheckrule>
+              </pm:reversedirection>
+            </pm:relation>
+            <pm:relation abstract="false" autonamed="true" final="false" guid="1A5QLCV80SG5PBJ8TBTN2RVMH2" inner="false" pmid="F400EO5TST" sealed="false" sortkey="0" visibility="content">
+              <pm:name>PartiallyComprehensive</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Partially Comprehensive</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Teilkasko</pm:stringval>
+              </pm:label>
+              <pm:type guid="CBP2P1FNUEG7CB06UNCB73DVEA">ElementaryProduct</pm:type>
+              <pm:target guid="DOIFIU8FQGGT88P9MLUS27TNQB">ProductModules::PartiallyComprehensive</pm:target>
+              <pm:defaultcardinalityrule/>
+              <pm:cardinalitycheckrule>
+                <pm:minmaxcardinalities>
+                  <pm:min>0</pm:min>
+                  <pm:max>1</pm:max>
+                </pm:minmaxcardinalities>
+              </pm:cardinalitycheckrule>
+              <pm:reversedirection>
+                <pm:name>PassengerCarProduct</pm:name>
+                <pm:label>
+                  <pm:stringval encoding="none" culture="en-US">Partially Comprehensive - reverse</pm:stringval>
+                  <pm:stringval encoding="none" culture="de-DE">Teilkasko - rückwärts</pm:stringval>
+                </pm:label>
+                <pm:defaultcardinalityrule/>
+                <pm:cardinalitycheckrule>
+                  <pm:minmaxcardinalities>
+                    <pm:min>0</pm:min>
+                    <pm:max>1</pm:max>
+                  </pm:minmaxcardinalities>
+                </pm:cardinalitycheckrule>
+              </pm:reversedirection>
+            </pm:relation>
+            <pm:relation abstract="false" autonamed="true" final="false" guid="FQRBF9NVGIG6CALCCMH10G1ES8" inner="false" pmid="G400EO5TST" sealed="false" sortkey="0" visibility="content">
+              <pm:name>FullyComprehensive</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Vollkasko</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Fully Comprehensive</pm:stringval>
+              </pm:label>
+              <pm:type guid="CBP2P1FNUEG7CB06UNCB73DVEA">ElementaryProduct</pm:type>
+              <pm:target guid="76LMNFB8V2J7HB7QSBH1RKGCR7">ProductModules::FullyComprehensive</pm:target>
+              <pm:defaultcardinalityrule/>
+              <pm:cardinalitycheckrule>
+                <pm:minmaxcardinalities>
+                  <pm:min>0</pm:min>
+                  <pm:max>1</pm:max>
+                </pm:minmaxcardinalities>
+              </pm:cardinalitycheckrule>
+              <pm:reversedirection>
+                <pm:name>PassengerCarProduct</pm:name>
+                <pm:label>
+                  <pm:stringval encoding="none" culture="de-DE">Vollkasko - rückwärts</pm:stringval>
+                  <pm:stringval encoding="none" culture="en-US">Fully Comprehensive - reverse</pm:stringval>
+                </pm:label>
+                <pm:defaultcardinalityrule/>
+                <pm:cardinalitycheckrule>
+                  <pm:minmaxcardinalities>
+                    <pm:min>0</pm:min>
+                    <pm:max>1</pm:max>
+                  </pm:minmaxcardinalities>
+                </pm:cardinalitycheckrule>
+              </pm:reversedirection>
+            </pm:relation>
+            <pm:relation abstract="false" autonamed="true" final="false" guid="6F9TD7LNF2HMS9ODSM5KQHLVTH" inner="false" pmid="H400EO5TST" sealed="false" sortkey="0" visibility="content">
+              <pm:name>Supplement</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Supplement/Rebate</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Zuschlag/Nachlass</pm:stringval>
+              </pm:label>
+              <pm:type guid="FK3MJBDTU4I9L98GES56342K6H">Supplement</pm:type>
+              <pm:target guid="FOSRUP8VOOHT3AF2FJTV0B4QOM">ProductModules::Supplement</pm:target>
+              <pm:defaultcardinalityrule/>
+              <pm:cardinalitycheckrule>
+                <pm:minmaxcardinalities>
+                  <pm:min>0</pm:min>
+                  <pm:max>1</pm:max>
+                </pm:minmaxcardinalities>
+              </pm:cardinalitycheckrule>
+              <pm:reversedirection>
+                <pm:name>PassengerCarProduct</pm:name>
+                <pm:label>
+                  <pm:stringval encoding="none" culture="en-US">Supplement/Rebate - reverse</pm:stringval>
+                  <pm:stringval encoding="none" culture="de-DE">Zuschlag/Nachlass - rückwärts</pm:stringval>
+                </pm:label>
+                <pm:defaultcardinalityrule/>
+                <pm:cardinalitycheckrule>
+                  <pm:minmaxcardinalities>
+                    <pm:min>0</pm:min>
+                    <pm:max>1</pm:max>
+                  </pm:minmaxcardinalities>
+                </pm:cardinalitycheckrule>
+              </pm:reversedirection>
+            </pm:relation>
+          </pm:relations>
+        </pm:productmodule>
+        <pm:productmodule abstract="false" final="false" guid="0F35UCM0M8HLQARQS3FTRFE54L" pmid="I100EO5TST" sealed="false" sortkey="0" visibility="content">
+          <pm:name>PassengerCar</pm:name>
+          <pm:label>
+            <pm:stringval encoding="none" culture="en-US">Passenger Car</pm:stringval>
+            <pm:stringval encoding="none" culture="de-DE">Pkw</pm:stringval>
+          </pm:label>
+          <pm:type guid="2A39RASROOHLPBUKA9ERLKSIC3">TechnicalSchema::ProductModuleTypes::PassengerCarType</pm:type>
+          <pm:contractattributes>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="FILLNAQKNAGCPBQ62C4RBITL23" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="content" autosetcalcresult="false">
+              <pm:name>overnightCarStorage</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Overnight Car Storage</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Abstellort</pm:stringval>
+              </pm:label>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvaluesfromenum>
+                      <pm:enumeration guid="FO7O5JVP8CGKN9LHOH3JQ07UNA">Constants::Enumerations::OvernightCarStorage</pm:enumeration>
+                    </pm:validvaluesfromenum>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="BIBQ6Q9GCQGEAAKPLD5SVH3DQE" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="content" autosetcalcresult="false">
+              <pm:name>yearlyMileage</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Jährliche Fahrleistung</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Yearly Mileage</pm:stringval>
+              </pm:label>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:floatval>5000.0</pm:floatval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:floatval>10000.0</pm:floatval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:floatval>15000.0</pm:floatval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:floatval>20000.0</pm:floatval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:floatval>30000.0</pm:floatval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:floatval>40000.0</pm:floatval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:floatval>50000.0</pm:floatval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="84T9I86EK4J5D80GH3MDR9P0PJ" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="content" autosetcalcresult="false">
+              <pm:name>riskClass</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Wagniskennziffer</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Risk Classification</pm:stringval>
+              </pm:label>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>112</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>112</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="997O0MFVICHN1966GOUDG1DQNL" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="content" autosetcalcresult="false">
+              <pm:name>power</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Leistung in kW</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Power in kW</pm:stringval>
+              </pm:label>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:floatval>0.0</pm:floatval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:floatval>400.0</pm:floatval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+            </pm:attribute>
+          </pm:contractattributes>
+        </pm:productmodule>
+      </pm:productmodules>
+      <pm:rootproductmodule>PassengerCarProduct</pm:rootproductmodule>
+    </pm:compactcomponentvariant>
+    <pm:compactcomponentvariant guid="204AM6BH7MH8RARQST8JD6DDJD" pmid="E400AK5MSG">
+      <pm:name>AdjustmentLevel2016</pm:name>
+      <pm:productmodules>
+        <pm:productmodule abstract="false" final="false" guid="43UVNDMFJUICA8OVPKIV7TKI9E" pmid="9000EO5TST" sealed="false" sortkey="0" visibility="content">
+          <pm:name>PassengerCarProduct</pm:name>
+          <pm:type guid="7MH21R50EEI6K8PBPUKDO9DJR5">TechnicalSchema::ProductModuleTypes::ProductType</pm:type>
+          <pm:contractattributes>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="A7O2Q6LKLEHI5AL8DHGV71JS79" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="content" autosetcalcresult="false">
+              <pm:name>paymentFrequency</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Zahlungsrhythmus</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Payment Frequency</pm:stringval>
+              </pm:label>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>1</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="EQQKC6GPBEJ8T9L8GGHV4SD8AT" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="content" autosetcalcresult="false">
+              <pm:name>netPremium</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Net Premium</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Nettoprämie</pm:stringval>
+              </pm:label>
+            </pm:attribute>
+          </pm:contractattributes>
+          <pm:methods>
+            <pm:method abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="D52UK866RKH3V985QA47ABP5B4" isnullable="false" nrdims="0" sealed="false" sortkey="0" visibility="content">
+              <pm:name>tariff</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Tariff</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Tarifiere</pm:stringval>
+              </pm:label>
+              <pm:defaultfunction guid="ED9RNR5OH0GMUA3ULVAJLOPCPA">Mathematics::Functions::tariffProduct_starting2016</pm:defaultfunction>
+              <pm:calcfunctions>
+                <pm:entry>
+                  <pm:calcfunction autoinput="false" autooutput="false" guid="ED9RNR5OH0GMUA3ULVAJLOPCPA">
+                    <pm:name>Mathematics::Functions::tariffProduct_starting2016</pm:name>
+                  </pm:calcfunction>
+                </pm:entry>
+              </pm:calcfunctions>
+            </pm:method>
+          </pm:methods>
+          <pm:relations>
+            <pm:relation abstract="false" autonamed="true" final="false" guid="CUEV1CNSSGGEBAHNACURMLN9MH" inner="true" pmid="G400AK5MSG" sealed="false" sortkey="0" visibility="content">
+              <pm:name>PassengerCar</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Passenger Car</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Pkw</pm:stringval>
+              </pm:label>
+              <pm:type guid="9KGIKLCQ5OI3J838PKM01HA0BU">ObjectType</pm:type>
+              <pm:target guid="7GO6PPL1BSJBTBRRCICLEGBISN">PassengerCar</pm:target>
+              <pm:defaultcardinalityrule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>1</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultcardinalityrule>
+              <pm:cardinalitycheckrule>
+                <pm:minmaxcardinalities>
+                  <pm:min>1</pm:min>
+                  <pm:max>1</pm:max>
+                </pm:minmaxcardinalities>
+              </pm:cardinalitycheckrule>
+              <pm:reversedirection>
+                <pm:name>PassengerCarProduct</pm:name>
+                <pm:label>
+                  <pm:stringval encoding="none" culture="en-US">Passenger Car - reverse</pm:stringval>
+                  <pm:stringval encoding="none" culture="de-DE">Pkw - rückwärts</pm:stringval>
+                </pm:label>
+                <pm:defaultcardinalityrule>
+                  <pm:value>
+                    <pm:scalarvalue>
+                      <pm:integerval>1</pm:integerval>
+                    </pm:scalarvalue>
+                  </pm:value>
+                </pm:defaultcardinalityrule>
+                <pm:cardinalitycheckrule>
+                  <pm:minmaxcardinalities>
+                    <pm:min>1</pm:min>
+                    <pm:max>1</pm:max>
+                  </pm:minmaxcardinalities>
+                </pm:cardinalitycheckrule>
+              </pm:reversedirection>
+            </pm:relation>
+            <pm:relation abstract="false" autonamed="true" final="false" guid="2F6LJJG0B6IEJBN25K6B6CHDV2" inner="false" pmid="I400AK5MSG" sealed="false" sortkey="0" visibility="content">
+              <pm:name>Liability</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Haftpflicht</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Liability</pm:stringval>
+              </pm:label>
+              <pm:type guid="CBP2P1FNUEG7CB06UNCB73DVEA">ElementaryProduct</pm:type>
+              <pm:target guid="7FQN32RKASJJQBO17NEGTQ6V8N">ProductModules::Liability</pm:target>
+              <pm:defaultcardinalityrule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>1</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultcardinalityrule>
+              <pm:cardinalitycheckrule>
+                <pm:minmaxcardinalities>
+                  <pm:min>1</pm:min>
+                  <pm:max>1</pm:max>
+                </pm:minmaxcardinalities>
+              </pm:cardinalitycheckrule>
+              <pm:reversedirection>
+                <pm:name>PassengerCarProduct</pm:name>
+                <pm:label>
+                  <pm:stringval encoding="none" culture="de-DE">Haftpflicht - rückwärts</pm:stringval>
+                  <pm:stringval encoding="none" culture="en-US">Liability - reverse</pm:stringval>
+                </pm:label>
+                <pm:defaultcardinalityrule>
+                  <pm:value>
+                    <pm:scalarvalue>
+                      <pm:integerval>1</pm:integerval>
+                    </pm:scalarvalue>
+                  </pm:value>
+                </pm:defaultcardinalityrule>
+                <pm:cardinalitycheckrule>
+                  <pm:minmaxcardinalities>
+                    <pm:min>1</pm:min>
+                    <pm:max>1</pm:max>
+                  </pm:minmaxcardinalities>
+                </pm:cardinalitycheckrule>
+              </pm:reversedirection>
+            </pm:relation>
+            <pm:relation abstract="false" autonamed="true" final="false" guid="F04HJA92BQH5FAVNLQKJEE0VED" inner="false" pmid="K400AK5MSG" sealed="false" sortkey="0" visibility="content">
+              <pm:name>PartiallyComprehensive</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Partially Comprehensive</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Teilkasko</pm:stringval>
+              </pm:label>
+              <pm:type guid="CBP2P1FNUEG7CB06UNCB73DVEA">ElementaryProduct</pm:type>
+              <pm:target guid="DOIFIU8FQGGT88P9MLUS27TNQB">ProductModules::PartiallyComprehensive</pm:target>
+              <pm:defaultcardinalityrule/>
+              <pm:cardinalitycheckrule>
+                <pm:minmaxcardinalities>
+                  <pm:min>0</pm:min>
+                  <pm:max>1</pm:max>
+                </pm:minmaxcardinalities>
+              </pm:cardinalitycheckrule>
+              <pm:reversedirection>
+                <pm:name>PassengerCarProduct</pm:name>
+                <pm:label>
+                  <pm:stringval encoding="none" culture="en-US">Partially Comprehensive - reverse</pm:stringval>
+                  <pm:stringval encoding="none" culture="de-DE">Teilkasko - rückwärts</pm:stringval>
+                </pm:label>
+                <pm:defaultcardinalityrule/>
+                <pm:cardinalitycheckrule>
+                  <pm:minmaxcardinalities>
+                    <pm:min>0</pm:min>
+                    <pm:max>1</pm:max>
+                  </pm:minmaxcardinalities>
+                </pm:cardinalitycheckrule>
+              </pm:reversedirection>
+            </pm:relation>
+            <pm:relation abstract="false" autonamed="true" final="false" guid="A7EM11G8F8GDK8U88501T2MD9P" inner="false" pmid="M400AK5MSG" sealed="false" sortkey="0" visibility="content">
+              <pm:name>FullyComprehensive</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Vollkasko</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Fully Comprehensive</pm:stringval>
+              </pm:label>
+              <pm:type guid="CBP2P1FNUEG7CB06UNCB73DVEA">ElementaryProduct</pm:type>
+              <pm:target guid="76LMNFB8V2J7HB7QSBH1RKGCR7">ProductModules::FullyComprehensive</pm:target>
+              <pm:defaultcardinalityrule/>
+              <pm:cardinalitycheckrule>
+                <pm:minmaxcardinalities>
+                  <pm:min>0</pm:min>
+                  <pm:max>1</pm:max>
+                </pm:minmaxcardinalities>
+              </pm:cardinalitycheckrule>
+              <pm:reversedirection>
+                <pm:name>PassengerCarProduct</pm:name>
+                <pm:label>
+                  <pm:stringval encoding="none" culture="de-DE">Vollkasko - rückwärts</pm:stringval>
+                  <pm:stringval encoding="none" culture="en-US">Fully Comprehensive - reverse</pm:stringval>
+                </pm:label>
+                <pm:defaultcardinalityrule/>
+                <pm:cardinalitycheckrule>
+                  <pm:minmaxcardinalities>
+                    <pm:min>0</pm:min>
+                    <pm:max>1</pm:max>
+                  </pm:minmaxcardinalities>
+                </pm:cardinalitycheckrule>
+              </pm:reversedirection>
+            </pm:relation>
+            <pm:relation abstract="false" autonamed="true" final="false" guid="ERJOA850DEGMH84KB8S1M952C2" inner="false" pmid="O400AK5MSG" sealed="false" sortkey="0" visibility="content">
+              <pm:name>Supplement</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Supplement/Rebate</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Zuschlag/Nachlass</pm:stringval>
+              </pm:label>
+              <pm:type guid="FK3MJBDTU4I9L98GES56342K6H">Supplement</pm:type>
+              <pm:target guid="FOSRUP8VOOHT3AF2FJTV0B4QOM">ProductModules::Supplement</pm:target>
+              <pm:defaultcardinalityrule/>
+              <pm:cardinalitycheckrule>
+                <pm:minmaxcardinalities>
+                  <pm:min>0</pm:min>
+                  <pm:max>1</pm:max>
+                </pm:minmaxcardinalities>
+              </pm:cardinalitycheckrule>
+              <pm:reversedirection>
+                <pm:name>PassengerCarProduct</pm:name>
+                <pm:label>
+                  <pm:stringval encoding="none" culture="en-US">Supplement/Rebate - reverse</pm:stringval>
+                  <pm:stringval encoding="none" culture="de-DE">Zuschlag/Nachlass - rückwärts</pm:stringval>
+                </pm:label>
+                <pm:defaultcardinalityrule/>
+                <pm:cardinalitycheckrule>
+                  <pm:minmaxcardinalities>
+                    <pm:min>0</pm:min>
+                    <pm:max>1</pm:max>
+                  </pm:minmaxcardinalities>
+                </pm:cardinalitycheckrule>
+              </pm:reversedirection>
+            </pm:relation>
+          </pm:relations>
+        </pm:productmodule>
+        <pm:productmodule abstract="false" final="false" guid="7GO6PPL1BSJBTBRRCICLEGBISN" pmid="Q400AK5MSG" sealed="false" sortkey="0" visibility="content">
+          <pm:name>PassengerCar</pm:name>
+          <pm:label>
+            <pm:stringval encoding="none" culture="en-US">Passenger Car</pm:stringval>
+            <pm:stringval encoding="none" culture="de-DE">Pkw</pm:stringval>
+          </pm:label>
+          <pm:type guid="2A39RASROOHLPBUKA9ERLKSIC3">TechnicalSchema::ProductModuleTypes::PassengerCarType</pm:type>
+          <pm:contractattributes>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="E74KGBMH7EJ8KAPKPLOPD99PG4" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="content" autosetcalcresult="false">
+              <pm:name>overnightCarStorage</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="en-US">Overnight Car Storage</pm:stringval>
+                <pm:stringval encoding="none" culture="de-DE">Abstellort</pm:stringval>
+              </pm:label>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvaluesfromenum>
+                      <pm:enumeration guid="FO7O5JVP8CGKN9LHOH3JQ07UNA">Constants::Enumerations::OvernightCarStorage</pm:enumeration>
+                    </pm:validvaluesfromenum>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="FL3OBCKGQOJVL976NQ3JE4BSF9" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="content" autosetcalcresult="false">
+              <pm:name>yearlyMileage</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Jährliche Fahrleistung</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Yearly Mileage</pm:stringval>
+              </pm:label>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:floatval>5000.0</pm:floatval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:floatval>10000.0</pm:floatval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:floatval>15000.0</pm:floatval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:floatval>20000.0</pm:floatval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:floatval>30000.0</pm:floatval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:floatval>40000.0</pm:floatval>
+                        </pm:value>
+                      </pm:entry>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:floatval>50000.0</pm:floatval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="integer" final="false" guid="CB275MKJUOGMQBUTCMB5OC2EH9" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="content" autosetcalcresult="false">
+              <pm:name>riskClass</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Wagniskennziffer</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Risk Classification</pm:stringval>
+              </pm:label>
+              <pm:valuecheckrule>
+                <pm:and>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:value>
+                          <pm:integerval>112</pm:integerval>
+                        </pm:value>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:allexceptnull/>
+                  </pm:rule>
+                </pm:and>
+              </pm:valuecheckrule>
+              <pm:defaultvaluerule>
+                <pm:value>
+                  <pm:scalarvalue>
+                    <pm:integerval>112</pm:integerval>
+                  </pm:scalarvalue>
+                </pm:value>
+              </pm:defaultvaluerule>
+            </pm:attribute>
+            <pm:attribute abstract="false" autosetcalcoutput="false" datatype="float" final="false" guid="9RM0HF8JGAH83ATIB9S9FALCC5" isnullable="true" nrdims="0" sealed="false" sortkey="0" visibility="content" autosetcalcresult="false">
+              <pm:name>power</pm:name>
+              <pm:label>
+                <pm:stringval encoding="none" culture="de-DE">Leistung in kW</pm:stringval>
+                <pm:stringval encoding="none" culture="en-US">Power in kW</pm:stringval>
+              </pm:label>
+              <pm:valuecheckrule>
+                <pm:or>
+                  <pm:rule>
+                    <pm:validvalues>
+                      <pm:entry>
+                        <pm:range>
+                          <pm:min>
+                            <pm:floatval>0.0</pm:floatval>
+                          </pm:min>
+                          <pm:max>
+                            <pm:floatval>400.0</pm:floatval>
+                          </pm:max>
+                        </pm:range>
+                      </pm:entry>
+                    </pm:validvalues>
+                  </pm:rule>
+                  <pm:rule>
+                    <pm:onlynull/>
+                  </pm:rule>
+                </pm:or>
+              </pm:valuecheckrule>
+            </pm:attribute>
+          </pm:contractattributes>
+        </pm:productmodule>
+      </pm:productmodules>
+      <pm:rootproductmodule>PassengerCarProduct</pm:rootproductmodule>
+    </pm:compactcomponentvariant>
+  </pm:compactcomponentvariants>
+  <pm:rootproductmoduletype guid="7MH21R50EEI6K8PBPUKDO9DJR5">TechnicalSchema::ProductModuleTypes::ProductType</pm:rootproductmoduletype>
+</pm:compactcomponent>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:productmoduletype xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" dataversion="1.5.3.0" final="false" guid="9VR48CRP9GI7Q9E8RG9THUPJV7" hasvariants="none" pmid="4300TL5TST" root="none" sealed="false" sortkey="0" visibility="content">
+  <pm:namespace>TechnicalSchema::ProductModuleTypes</pm:namespace>
+  <pm:name>LiabilityElementaryProductType</pm:name>
+  <pm:extends>
+    <pm:base guid="9UIVTGKE7UHV9869CKIOUQU7S8">TechnicalSchema::ProductModuleTypes::MotorElementaryProductType</pm:base>
+  </pm:extends>
+  <pm:label>
+    <pm:stringval encoding="none" culture="en-US">Liability Elementary Product Type</pm:stringval>
+    <pm:stringval encoding="none" culture="de-DE">Haftpflicht-Elementarprodukttyp</pm:stringval>
+  </pm:label>
+  <pm:pm3infotags istemplate="false"/>
+</pm:productmoduletype>
