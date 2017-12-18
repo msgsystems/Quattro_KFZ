@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<pm:variable xmlns:pm="http://www.msg.de/msgpm/data/2011" abstract="false" datatype="float" dataversion="1.5.3.0" final="false" guid="7EPUROM944IPJA52NG9IP21MQA" isnullable="false" nrdims="0" pmid="30009Z5MSG" sealed="false" sortkey="0" visibility="content">
-  <pm:namespace>Mathematics::Variables</pm:namespace>
-  <pm:name>Ricos_Neues_Float</pm:name>
-</pm:variable>
