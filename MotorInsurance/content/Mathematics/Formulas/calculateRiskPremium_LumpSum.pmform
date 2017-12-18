@@ -20,6 +20,6 @@ print( "calculate risk premium (lump-sum)" )
 Res = this.lumpSumPremium
 
 print( "risk premium = ", Res )
-]]></pm:text>
+//Rico war hier]]></pm:text>
   </pm:sourcecode>
 </pm:formula>
