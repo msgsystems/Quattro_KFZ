@@ -16,7 +16,7 @@
     <pm:text encoding="none"><![CDATA[data float lumpSumPremium
 
 print( "calculate risk premium (lump-sum)" )
-//Hallo thomas
+//Hallo thomas, hier ist ein neuer Test
 Res = this.lumpSumPremium
 
 print( "risk premium = ", Res )
