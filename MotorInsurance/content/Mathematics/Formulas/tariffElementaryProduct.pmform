@@ -24,7 +24,7 @@ data float netPremium
 data float minimalPremium
 float premium = 0
 extern object InsObj
-
+// Eva: Du bist zu langsam
 print( "tariff elementary product ", GETOBJECTNAME( this ) )
 
 premium = this.calculateRiskPremium[ InsObj = InsObj ]

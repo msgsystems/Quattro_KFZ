@@ -23,6 +23,7 @@ string tableName = this.tariffTable
 
 print( "calculate risk premium (by table): ", tableName, " for risk class: ", InsObj.riskClass , " and power: ", InsObj.power )
 //Hallihallo
+// Hallo Lucas, wo steckst du?
 Res = TableByName( tableName , TariffTableStructure ).premium.min[( riskClass = InsObj.riskClass ), ( power > InsObj.power )]
 
 print( "risk premium = ", Res )
