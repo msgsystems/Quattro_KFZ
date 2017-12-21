@@ -27,7 +27,7 @@ data float tariff
 data int paymentFrequency
 data float value
 float premium = 0
-
+// Mergingtest Eva
 print( "tariff product ", GETOBJECTNAME( this ) )
 
 // determine insured object
