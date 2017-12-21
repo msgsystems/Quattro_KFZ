@@ -27,6 +27,7 @@ data float tariff
 data int paymentFrequency
 data float value
 float premium = 0
+// Mergingtest Eva
 //Heute ist ein schöner Tag ;)
 print( "tariff product ", GETOBJECTNAME( this ) )
 
