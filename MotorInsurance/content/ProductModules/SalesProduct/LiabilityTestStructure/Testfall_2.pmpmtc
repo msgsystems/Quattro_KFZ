@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:compactproductmoduletestcase xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1.5.3.0" guid="719GV8U72II16A1K6QBP6AU623" pmid="2000WX5MSG" sortkey="0">
+  <pm:namespace>ProductModules::SalesProduct::LiabilityTestStructure</pm:namespace>
+  <pm:name>Testfall_2</pm:name>
+  <pm:instructions>
+    <pm:instruction guid="80OHOGQKN6GA1B8BTROVK9LFD9">
+      <pm:include>
+        <pm:container guid="EJV0ISLFRAI7086IO5H8D5TD5Q">ProductModules::SalesProduct::LiabilityTestStructure</pm:container>
+        <pm:alias>structure</pm:alias>
+      </pm:include>
+    </pm:instruction>
+    <pm:instruction guid="098Q36O11IHEP8PLV4C9OBQ5VB">
+      <pm:commit/>
+    </pm:instruction>
+    <pm:instruction guid="7Q0FT7OTA2I7E8IIV7PVAA4N5V">
+      <pm:calculateproductmodulemember ownerid="structure::0" calculationid="0">
+        <pm:name>tariff</pm:name>
+      </pm:calculateproductmodulemember>
+    </pm:instruction>
+  </pm:instructions>
+</pm:compactproductmoduletestcase>

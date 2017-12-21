@@ -60,11 +60,6 @@
     <pm:instruction guid="A5AI9039HGG8QA13TKSIEKLO3I">
       <pm:setattributevalue ownerid="27">
         <pm:name>power</pm:name>
-        <pm:value>
-          <pm:scalarvalue>
-            <pm:floatval>88.0</pm:floatval>
-          </pm:scalarvalue>
-        </pm:value>
       </pm:setattributevalue>
     </pm:instruction>
     <pm:instruction guid="F17D3G71JGIJQAF2FTMS25OKLV">

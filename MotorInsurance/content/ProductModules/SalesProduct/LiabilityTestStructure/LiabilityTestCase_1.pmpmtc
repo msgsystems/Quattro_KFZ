@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pm:compactproductmoduletestcase xmlns:pm="http://www.msg.de/msgpm/data/2011" dataversion="1.5.3.0" guid="91NF86KRI4IU79GGQ3TDE5QHUI" pmid="1000WX5MSG" sortkey="0">
+  <pm:namespace>ProductModules::SalesProduct::LiabilityTestStructure</pm:namespace>
+  <pm:name>LiabilityTestCase_1</pm:name>
+  <pm:label>
+    <pm:stringval encoding="none" culture="de-DE">Haftpflicht-Testfall</pm:stringval>
+    <pm:stringval encoding="none" culture="en-US">Liability Test Case</pm:stringval>
+  </pm:label>
+  <pm:instructions>
+    <pm:instruction guid="4PJ3L2P0G2IGK87GI3BM3MT4MA">
+      <pm:include>
+        <pm:container guid="EJV0ISLFRAI7086IO5H8D5TD5Q">ProductModules::SalesProduct::LiabilityTestStructure</pm:container>
+        <pm:alias>structure</pm:alias>
+      </pm:include>
+    </pm:instruction>
+    <pm:instruction guid="AUABQAL658GE180TJKME4J5H3F">
+      <pm:commit/>
+    </pm:instruction>
+    <pm:instruction guid="2A7Q96R8OGJAK89638I36K5KD9">
+      <pm:calculateproductmodulemember ownerid="structure::0" calculationid="0">
+        <pm:name>tariff</pm:name>
+      </pm:calculateproductmodulemember>
+    </pm:instruction>
+  </pm:instructions>
+</pm:compactproductmoduletestcase>
